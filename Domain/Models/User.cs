@@ -7,9 +7,5 @@ public class User
     public List<Post> posts { get; set; }
     public List<Comment> comments { get; set; }
 
-    public User(string username, string password)
-    {
-        this.username = username;
-        this.password = password;
-    }
+
 }

@@ -1,0 +1,14 @@
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Domain
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Domain.deps.json
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Domain.runtimeconfig.json
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Domain.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Domain.pdb
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.AssemblyInfoInputs.cache
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.AssemblyInfo.cs
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.csproj.CoreCompileInputs.cache
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/refint/Domain.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.pdb
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/ref/Domain.dll

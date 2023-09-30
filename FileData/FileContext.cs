@@ -40,11 +40,11 @@ public class FileContext
         if (_dataContainer != null) return;
         if (!File.Exists(filePath))
         {
-            _dataContainer = new();
+            _dataContainer = new()
             {
-                _dataContainer.Comments = new List<Comment>();
-                _dataContainer.Posts = new List<Post>();
-                _dataContainer.Users = new List<User>();
+                Comments = new List<Comment>(),
+                Posts = new List<Post>(),
+                Users = new List<User>()
             };
             return;
         }
@@ -55,7 +55,10 @@ public class FileContext
 
     public void SaveChanges()
     {
-        string serialized = JsonSerializer.Serialize(_dataContainer);
+        string serialized = JsonSerializer.Serialize(_dataContainer, new JsonSerializerOptions
+        {
+            WriteIndented = true
+        });
         File.WriteAllText(filePath, serialized);
         _dataContainer = null;
     }

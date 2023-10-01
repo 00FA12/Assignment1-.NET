@@ -36,6 +36,58 @@ public class PostLogic : IPostLogic
         return created;
     }
 
+    public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto)
+    {
+        return _postDao.GetAsync(searchPostParametersDto);
+    }
+
+    public async Task UpdateAsync(PostEditDto post)
+    {
+        Post? toEdit = await _postDao.GetByIdAsync(post.postId);
+
+        if (toEdit == null)
+        {
+            throw new Exception($"The post with id: {post.postId} doesn't exist");
+        }
+
+        User? user = await _userDao.GetByIdAsync(post.ownerId);
+
+        if (user == null)
+        {
+            throw new Exception($"User with id: {post.ownerId} doesn't exist");
+        }
+
+        Post edited = new Post(user, post.newTitle, post.newBody)
+        {
+            edited = true,
+            id = toEdit.id
+        };
+        
+        validatePost(edited);
+
+        await _postDao.UpdateAsync(edited);
+    }
+
+    private static void validatePost(Post post)
+    {
+        string title = post.title;
+        string body = post.body;
+        if (title.Length < 3)
+        {
+            throw new Exception("Title must be at least 3 characters long!");
+        }
+
+        if (title.Length > 100)
+        {
+            throw new Exception("Title must be less that 100 characters long");
+        }
+
+        if (body.Length > 1000)
+        {
+            throw new Exception("Body must be less than 1000 characters long");
+        }
+    }
+
     private static void ValidateData(PostCreationDTO postToCreate)
     {
         string title = postToCreate.title;

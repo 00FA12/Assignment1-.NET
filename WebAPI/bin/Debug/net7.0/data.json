@@ -3,16 +3,23 @@
     {
       "username": "paco",
       "password": "paco1234",
-      "posts": null,
-      "comments": null
-    },
-    {
-      "username": "jose",
-      "password": "jose1234",
-      "posts": null,
-      "comments": null
+      "id": 1
     }
   ],
-  "Posts": [],
+  "Posts": [
+    {
+      "title": "Porfiiii",
+      "body": "Ojala funcione",
+      "author": {
+        "username": "paco",
+        "password": "paco1234",
+        "id": 1
+      },
+      "edited": false,
+      "id": 1,
+      "upVote": 0,
+      "downVote": 0
+    }
+  ],
   "Comments": []
 }

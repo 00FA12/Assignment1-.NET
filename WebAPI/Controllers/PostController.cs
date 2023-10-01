@@ -30,4 +30,36 @@ public class PostController : ControllerBase
             return StatusCode(500, e.Message);
         }
     }
+
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<Post>>> GetAsync([FromQuery] string? username, [FromQuery] int? userId,
+        [FromQuery] bool? edited, [FromQuery] string? titleContains, [FromQuery] string? bodyContains)
+    {
+        try
+        {
+            SearchPostParametersDto parameters = new(username, userId, edited, titleContains, bodyContains);
+            var posts = await postLogic.GetAsync(parameters);
+            return Ok(posts);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
+
+    [HttpPatch]
+    public async Task<ActionResult> UpdateAsync([FromBody] PostEditDto postEdit)
+    {
+        try
+        {
+            await postLogic.UpdateAsync(postEdit);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return StatusCode(500, e.Message);
+        }
+    }
 }

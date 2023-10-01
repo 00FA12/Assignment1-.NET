@@ -1,0 +1,18 @@
+{
+  "Users": [
+    {
+      "username": "paco",
+      "password": "paco1234",
+      "posts": null,
+      "comments": null
+    },
+    {
+      "username": "jose",
+      "password": "jose1234",
+      "posts": null,
+      "comments": null
+    }
+  ],
+  "Posts": [],
+  "Comments": []
+}

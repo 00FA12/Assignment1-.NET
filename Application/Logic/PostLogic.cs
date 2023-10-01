@@ -23,7 +23,7 @@ public class PostLogic : IPostLogic
 
         User? user = await _userDao.GetByIdAsync(postToCreate.ownerID);
 
-        if (postToCreate.title.Equals(existing) && postToCreate.body.Equals(existing2) && postToCreate.ownerID.Equals(user.id))
+        if (postToCreate.title.Equals(existing.title) && postToCreate.body.Equals(existing2.body) && postToCreate.ownerID.Equals(user.id))
         {
             throw new Exception("This post already exists");
         }

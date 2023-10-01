@@ -5,6 +5,7 @@ public class Comment
     public string text { get; set; }
     public User author { get; }
     public Post post { get; }
+    public int id { get; set; }
     public int upvote { get; set; }
     public int downVote { get; set; }
 

@@ -4,6 +4,11 @@
       "username": "paco",
       "password": "paco1234",
       "id": 1
+    },
+    {
+      "username": "test",
+      "password": "test1",
+      "id": 2
     }
   ],
   "Posts": [
@@ -21,5 +26,30 @@
       "downVote": 0
     }
   ],
-  "Comments": []
+  "Comments": [
+    {
+      "text": "6th attempt",
+      "author": {
+        "username": "paco",
+        "password": "paco1234",
+        "id": 1
+      },
+      "post": {
+        "title": "string",
+        "body": "string",
+        "author": {
+          "username": "paco",
+          "password": "paco1234",
+          "id": 1
+        },
+        "edited": true,
+        "id": 1,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 1,
+      "upvote": 0,
+      "downVote": 0
+    }
+  ]
 }

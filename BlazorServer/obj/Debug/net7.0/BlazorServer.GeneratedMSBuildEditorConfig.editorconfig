@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/hmp/RiderProjects/Assignment1/BlazorServer/Pages/ViewPosts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1Bvc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/hmp/RiderProjects/Assignment1/BlazorServer/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

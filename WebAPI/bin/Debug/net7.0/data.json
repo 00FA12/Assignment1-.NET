@@ -55,6 +55,19 @@
       "id": 3,
       "upVote": 0,
       "downVote": 0
+    },
+    {
+      "title": "dfghjkl;",
+      "body": "dfgyughku,ujyg",
+      "author": {
+        "username": "test",
+        "password": "test1",
+        "id": 2
+      },
+      "edited": false,
+      "id": 4,
+      "upVote": 0,
+      "downVote": 0
     }
   ],
   "Comments": [

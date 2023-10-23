@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/hmp/RiderProjects/Assignment1/BlazorServer/Pages/CreatePost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-pbhs6dsvfl
+
 [/Users/hmp/RiderProjects/Assignment1/BlazorServer/Pages/CreateUser.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-6xvoffjlvn

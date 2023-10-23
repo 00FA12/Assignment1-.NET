@@ -9,6 +9,11 @@
       "username": "test",
       "password": "test1",
       "id": 2
+    },
+    {
+      "username": "test2",
+      "password": "test2",
+      "id": 3
     }
   ],
   "Posts": [
@@ -22,6 +27,32 @@
       },
       "edited": true,
       "id": 1,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "vorem",
+      "body": "porfiiiiiiiii",
+      "author": {
+        "username": "paco",
+        "password": "paco1234",
+        "id": 1
+      },
+      "edited": false,
+      "id": 2,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "3rd attempt",
+      "body": "waientgijsnrtgskrta",
+      "author": {
+        "username": "paco",
+        "password": "paco1234",
+        "id": 1
+      },
+      "edited": false,
+      "id": 3,
       "upVote": 0,
       "downVote": 0
     }

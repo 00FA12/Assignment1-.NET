@@ -32,7 +32,7 @@
 
         try
         {
-            await userService.Create(new UserCreationDTO(username, password));
+            await userService.CreateAsync(new UserCreationDTO(username, password));
             username = "";
             password = "";
             resultMsg = "User successfully created";

@@ -5,6 +5,35 @@
 
 <h3>Posts</h3>
 
+<div class="filter-bar">
+    <div class="filters-container">
+        <img src="icons/@(doShowFilters ? "clear_" : "")funnel.png" class="funnel" @onclick="@(() => doShowFilters = !doShowFilters)" alt="Funnel"/>
+        @if (doShowFilters)
+        {
+            <div class="filter">
+                <label>Username:</label>
+                <input type="text" @bind="usernameFilter"/>
+            </div>
+            <div class="filter">
+                <label>Is edited?</label>
+                <select @bind="editedStatusFilter">
+                    <option value="all">All</option>
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label>Title contains:</label>
+                <input type="text" @bind="titleContainsFilter"/>
+            </div>
+            <div class="filter">
+                <label>Body contains:</label>
+                <input type="text" @bind="bodyContainsFilter"/>
+            </div>
+        }
+    </div>
+</div>
+
 <div>
     <button @onclick="LoadPosts">Load</button>
 </div>
@@ -48,12 +77,25 @@ else
 @code {
     private IEnumerable<Post>? posts;
     private string msg = "";
+    
+    private string? usernameFilter;
+    private int? userIdFilter;
+    private string? editedStatusFilter;
+    private string? titleContainsFilter;
+    private bool doShowFilters = false;
+    private string? bodyContainsFilter;
+
 
     private async Task LoadPosts()
     {
         try
         {
-            posts = await postService.GetAsync(null, null, null, null);
+            bool? editedFilterValue = null;
+            if (!string.IsNullOrEmpty(editedStatusFilter) && !editedStatusFilter.Equals("all"))
+            {
+                editedFilterValue = bool.Parse(editedStatusFilter);
+            }
+            posts = await postService.GetAsync(usernameFilter, editedFilterValue, titleContainsFilter, bodyContainsFilter);
         }
         catch (Exception e)
         {
@@ -61,4 +103,24 @@ else
             msg = e.Message;
         }
     } 
+
+
+    private async Task RemovePost(int postId)
+    {
+        msg = "";
+        try
+        {
+            //await postService.DeleteAsync(postId);
+
+            var list = new List<Post>(posts!);
+            list.RemoveAll(post => post.id == postId);
+            posts = list.AsEnumerable();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
+
 }

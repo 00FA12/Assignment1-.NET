@@ -40,3 +40,4 @@
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/ref/BlazorServer.dll
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/CreateUser.razor.rz.scp.css
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/CreatePost.razor.rz.scp.css
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/ViewPosts.razor.rz.scp.css

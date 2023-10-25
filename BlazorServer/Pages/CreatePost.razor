@@ -6,43 +6,50 @@
 @inject IUserService userService;
 @inject NavigationManager navMgr;
 
-<div class="card">
-    @if (users == null)
-    {
-        <label>Loading users...</label>
-    }
-    else if (!users.Any())
-    {
-        <label>No users, you cannot create a Todo without assignee.</label>
-    }
-    else
-    {
-        <h3>Create Todo</h3>
-        <div class="form-group field">
-            <label>Title:</label>
-            <input type="text" @bind="postTitle"/>
-            <label>Body:</label>
-            <input type="text" @bind="postBody"/>
-        </div>
-        <div class="form-group field">
-            <label>Assignee:</label>
-            <select @bind="selectedUserId">
-                <option>Choose</option>
-                @foreach (User user in users)
-                {
-                    <option value="@user.id">@user.username</option>
-                }
-            </select>
-        </div>
-        <div class="button-row">
-            @if (!string.IsNullOrEmpty(msg))
+<AuthorizeView>
+    <Authorized>
+        <div class="card">
+            @if (users == null)
             {
-                <label style="color: red">@msg</label>
+                <label>Loading users...</label>
             }
-            <button @onclick="Create" class="acceptbtn">Create</button>
+            else if (!users.Any())
+            {
+                <label>No users, you cannot create a Todo without assignee.</label>
+            }
+            else
+            {
+                <h3>Create Todo</h3>
+                <div class="form-group field">
+                    <label>Title:</label>
+                    <input type="text" @bind="postTitle"/>
+                    <label>Body:</label>
+                    <input type="text" @bind="postBody"/>
+                </div>
+                <div class="form-group field">
+                    <label>Assignee:</label>
+                    <select @bind="selectedUserId">
+                        <option>Choose</option>
+                        @foreach (User user in users)
+                        {
+                            <option value="@user.id">@user.username</option>
+                        }
+                    </select>
+                </div>
+                <div class="button-row">
+                    @if (!string.IsNullOrEmpty(msg))
+                    {
+                        <label style="color: red">@msg</label>
+                    }
+                    <button @onclick="Create" class="acceptbtn">Create</button>
+                </div>
+            }
         </div>
-    }
-</div>
+    </Authorized>
+    <NotAuthorized>
+        <h2>You need to log-in to create a post</h2>
+    </NotAuthorized>
+</AuthorizeView>
 
 @code {
     private IEnumerable<User>? users;

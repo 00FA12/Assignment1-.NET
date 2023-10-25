@@ -42,3 +42,13 @@
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/CreatePost.razor.rz.scp.css
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/ViewPosts.razor.rz.scp.css
 /Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/ViewPost.razor.rz.scp.css
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.AspNetCore.Authorization.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.AspNetCore.Components.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.AspNetCore.Components.Authorization.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.AspNetCore.Metadata.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Shared.dll
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/bin/Debug/net7.0/Shared.pdb
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/Login.razor.rz.scp.css
+/Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/Pages/LoginButtons.razor.rz.scp.css

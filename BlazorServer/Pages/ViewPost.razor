@@ -3,6 +3,7 @@
 @using Domain.Models
 @using HttpClients.ClientInterfaces
 @using Microsoft.AspNetCore.Components
+@using System.Security.Claims
 @inject IPostService postService
 @inject IUserService userService
 @inject NavigationManager navMgr
@@ -34,9 +35,13 @@
         <div class="form-group field">
             <label>Owner: @getUsername()</label>
         </div>
-        <div class="button-row">
-            <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
-        </div>
+        <AuthorizeView>
+            <Authorized>
+                <div class="button-row" @context.User.Claims.FirstOrDefault(claim => claim.Type.Equals(ClaimTypes.Role)).Value>
+                    <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
+                </div>
+            </Authorized>
+        </AuthorizeView>
     }
     @if (!string.IsNullOrEmpty(msg))
     {
@@ -46,6 +51,7 @@
 
 
 @code {
+
     [Parameter]
     public int Id { get; set; }
 
@@ -54,7 +60,7 @@
     private IEnumerable<User>? users;
     private PostBasicDto postData = null;
     private string username = "";
-    
+
     protected override async Task OnInitializedAsync()
     {
         msg = "";
@@ -73,7 +79,7 @@
             msg = e.Message;
         }
     }
-    
+
     private async Task UpdateAsync()
     {
         try

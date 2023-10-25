@@ -1,8 +1,12 @@
+using BlazorServer.Auth;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using BlazorServer.Data;
+using BlazorServer.Services.Http;
 using HttpClients.ClientInterfaces;
 using HttpClients.Implementations;
+using Microsoft.AspNetCore.Components.Authorization;
+using Shared.Auth;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +16,11 @@ builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddScoped<IUserService, UserHttpClient>();
 builder.Services.AddScoped<IPostService, PostHttpClient>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthProvider>();
+builder.Services.AddScoped<BlazorServer.Services.IAuthService, JwtAuthService>();
+
+
+AuthorizationPolicies.AddPolicies(builder.Services);
 
 builder.Services.AddScoped(
     sp => 

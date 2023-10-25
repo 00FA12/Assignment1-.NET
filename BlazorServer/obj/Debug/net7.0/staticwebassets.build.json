@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JjbvLMFHr1FVRzPbQoX2nrGxh+iF9vhtxhBYVv3+xjQ=",
+  "Hash": "FZsiXK5/3k2eGXSWvH9fwLbBFdSw6Gg+ox9rluoULro=",
   "Source": "BlazorServer",
   "BasePath": "_content/BlazorServer",
   "Mode": "Default",
@@ -321,6 +321,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/icons/funnel.png"
+    },
+    {
+      "Identity": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/icons/Login.png",
+      "SourceId": "BlazorServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/",
+      "BasePath": "_content/BlazorServer",
+      "RelativePath": "icons/Login.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/Login.png"
+    },
+    {
+      "Identity": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/icons/Logout.png",
+      "SourceId": "BlazorServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/",
+      "BasePath": "_content/BlazorServer",
+      "RelativePath": "icons/Logout.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/icons/Logout.png"
     }
   ]
 }

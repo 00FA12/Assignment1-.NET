@@ -47,3 +47,16 @@
 /Users/hmp/RiderProjects/Assignment1/WebAPI/obj/Debug/net7.0/WebAPI.genruntimeconfig.cache
 /Users/hmp/RiderProjects/Assignment1/WebAPI/obj/Debug/net7.0/ref/WebAPI.dll
 /Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/data.json
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authorization.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Metadata.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Shared.dll
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Shared.pdb

@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "8QnB9e3h9D2sO4llBgO0a+4aJYJbADbhezDWeV1iJfKaz8dABx+ed50euXfRv7kKBIhEib/W3yd/1bf5JfR/jw==",
+  "dgSpecHash": "3Bdtoi/2Ktl5O7YoGylnAJASA0AgE7JsumquHzrK4uL1nw9ouz20PWvKD2i6NBPYuQIjr/7iEIZxScBY/YmBtA==",
   "success": true,
   "projectFilePath": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/BlazorServer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/hmp/.nuget/packages/microsoft.aspnetcore.authorization/7.0.13/microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.aspnetcore.components/7.0.13/microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.aspnetcore.components.analyzers/7.0.13/microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.aspnetcore.components.authorization/7.0.13/microsoft.aspnetcore.components.authorization.7.0.13.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.aspnetcore.metadata/7.0.13/microsoft.aspnetcore.metadata.7.0.13.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "/Users/hmp/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

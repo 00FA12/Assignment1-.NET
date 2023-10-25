@@ -57,6 +57,14 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
+      "Id": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/icons/Login.png",
+      "PackagePath": "staticwebassets/icons/Login.png"
+    },
+    {
+      "Id": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/icons/Logout.png",
+      "PackagePath": "staticwebassets/icons/Logout.png"
+    },
+    {
       "Id": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/icons/clear_funnel.png",
       "PackagePath": "staticwebassets/icons/clear_funnel.png"
     },

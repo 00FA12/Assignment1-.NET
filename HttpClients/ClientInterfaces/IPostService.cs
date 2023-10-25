@@ -14,4 +14,7 @@ public interface IPostService
         string? bodyContains
     );
 
+    Task<PostBasicDto> GetByIdAsync(int id);
+
+    public Task UpdateAsync(PostEditDto dto);
 }

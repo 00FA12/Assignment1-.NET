@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope = b-pbhs6dsvfl
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3JlYXRlVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-6xvoffjlvn
 
+[/Users/hmp/RiderProjects/Assignment1/BlazorServer/Pages/ViewPost.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1Bvc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vs30i17cfo
+
 [/Users/hmp/RiderProjects/Assignment1/BlazorServer/Pages/ViewPosts.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVmlld1Bvc3RzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-bg5l2yk0n1

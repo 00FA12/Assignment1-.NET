@@ -68,6 +68,17 @@ public class PostLogic : IPostLogic
         await _postDao.UpdateAsync(edited);
     }
 
+    public async Task<PostBasicDto> GetByIdAsync(int id)
+    {
+        Post? post = await _postDao.GetByIdAsync(id);
+        if (post == null)
+        {
+            throw new Exception($"Post with id {id} not found");
+        }
+
+        return new PostBasicDto(post.author, post.title, post.body, post.upVote, post.downVote, post.edited);
+    }
+
     private static void validatePost(Post post)
     {
         string title = post.title;

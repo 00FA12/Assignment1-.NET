@@ -1,4 +1,5 @@
 using System.Net.Http.Json;
+using System.Text;
 using System.Text.Json;
 using Domain.DTOs;
 using Domain.Models;
@@ -26,10 +27,11 @@ public class PostHttpClient : IPostService
         }
     }
 
-    public async Task<ICollection<Post>> GetAsync(string? userName, bool? editedStatus, string? titleContains, string? bodyContains)
+    public async Task<ICollection<Post>> GetAsync(string? userName, bool? editedStatus, string? titleContains,
+        string? bodyContains)
     {
         string query = ConstructQuery(userName, editedStatus, titleContains, bodyContains);
-        
+
         HttpResponseMessage response = await _client.GetAsync("/posts" + query);
         string content = await response.Content.ReadAsStringAsync();
         if (!response.IsSuccessStatusCode)
@@ -42,10 +44,42 @@ public class PostHttpClient : IPostService
             PropertyNameCaseInsensitive = true
         })!;
         return posts;
+    }
+
+    public async Task<PostBasicDto> GetByIdAsync(int id)
+    {
+        HttpResponseMessage response = await _client.GetAsync($"/posts/{id}");
+        string content = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new Exception(content);
+        }
+
+        PostBasicDto post = JsonSerializer.Deserialize<PostBasicDto>(content,
+            new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            }
+        )!;
+        return post;
+    }
+    
+    public async Task UpdateAsync(PostEditDto dto)
+    {
+        string dtoAsJson = JsonSerializer.Serialize(dto);
+        StringContent body = new StringContent(dtoAsJson, Encoding.UTF8, "application/json");
+
+        HttpResponseMessage response = await _client.PatchAsync("/posts", body);
+        if (!response.IsSuccessStatusCode)
+        {
+            string content = await response.Content.ReadAsStringAsync();
+            throw new Exception(content);
+        }
 
     }
 
-    private static string ConstructQuery(string? userName, bool? editedStatus, string? titleContains, string? bodyContains)
+    private static string ConstructQuery(string? userName, bool? editedStatus, string? titleContains,
+        string? bodyContains)
     {
         string query = "";
         if (!string.IsNullOrEmpty(userName))
@@ -72,6 +106,5 @@ public class PostHttpClient : IPostService
         }
 
         return query;
-
     }
 }

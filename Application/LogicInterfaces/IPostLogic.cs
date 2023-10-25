@@ -9,4 +9,6 @@ public interface IPostLogic
     Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto);
 
     Task UpdateAsync(PostEditDto post);
+    Task<PostBasicDto> GetByIdAsync(int id);
+
 }

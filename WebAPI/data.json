@@ -3,17 +3,26 @@
     {
       "username": "paco",
       "password": "paco1234",
-      "id": 1
+      "id": 1,
+      "securityLevel": 0
     },
     {
       "username": "test",
       "password": "test1",
-      "id": 2
+      "id": 2,
+      "securityLevel": 0
     },
     {
       "username": "test2",
       "password": "test2",
-      "id": 3
+      "id": 3,
+      "securityLevel": 4
+    },
+    {
+      "username": "test4",
+      "password": "test4",
+      "id": 4,
+      "securityLevel": 0
     }
   ],
   "Posts": [
@@ -23,7 +32,8 @@
       "author": {
         "username": "paco",
         "password": "paco1234",
-        "id": 1
+        "id": 1,
+        "securityLevel": 0
       },
       "edited": false,
       "id": 3,
@@ -36,7 +46,8 @@
       "author": {
         "username": "test",
         "password": "test1",
-        "id": 2
+        "id": 2,
+        "securityLevel": 0
       },
       "edited": false,
       "id": 4,
@@ -49,7 +60,8 @@
       "author": {
         "username": "paco",
         "password": "paco1234",
-        "id": 1
+        "id": 1,
+        "securityLevel": 0
       },
       "edited": true,
       "id": 2,
@@ -62,10 +74,53 @@
       "author": {
         "username": "paco",
         "password": "paco1234",
-        "id": 1
+        "id": 1,
+        "securityLevel": 0
       },
       "edited": true,
       "id": 1,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "testpost",
+      "body": "testpost",
+      "author": {
+        "username": "test2",
+        "password": "test2",
+        "id": 0,
+        "securityLevel": 4
+      },
+      "edited": false,
+      "id": 5,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "testpost2",
+      "body": "testpost2",
+      "author": {
+        "username": "test2",
+        "password": "test2",
+        "id": 3,
+        "securityLevel": 4
+      },
+      "edited": false,
+      "id": 6,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "testpost3",
+      "body": "testpost3",
+      "author": {
+        "username": "test2",
+        "password": "test2",
+        "id": 3,
+        "securityLevel": 4
+      },
+      "edited": false,
+      "id": 7,
       "upVote": 0,
       "downVote": 0
     }
@@ -76,7 +131,8 @@
       "author": {
         "username": "paco",
         "password": "paco1234",
-        "id": 1
+        "id": 1,
+        "securityLevel": 0
       },
       "post": {
         "title": "string",
@@ -84,7 +140,8 @@
         "author": {
           "username": "paco",
           "password": "paco1234",
-          "id": 1
+          "id": 1,
+          "securityLevel": 0
         },
         "edited": true,
         "id": 1,

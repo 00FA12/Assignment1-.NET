@@ -12,7 +12,6 @@
           "FileData": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.13",
           "Microsoft.AspNetCore.OpenApi": "7.0.10",
-          "Shared": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -210,6 +209,9 @@
         }
       },
       "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.13"
+        },
         "runtime": {
           "Domain.dll": {}
         }
@@ -220,14 +222,6 @@
         },
         "runtime": {
           "FileData.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13"
-        },
-        "runtime": {
-          "Shared.dll": {}
         }
       }
     }
@@ -403,11 +397,6 @@
       "sha512": ""
     },
     "FileData/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

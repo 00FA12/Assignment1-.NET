@@ -12,3 +12,11 @@
 /Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.pdb
 /Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.genruntimeconfig.cache
 /Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/ref/Domain.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Authorization.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.AspNetCore.Metadata.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.csproj.AssemblyReference.cache
+/Users/hmp/RiderProjects/Assignment1/Domain/obj/Debug/net7.0/Domain.csproj.CopyComplete

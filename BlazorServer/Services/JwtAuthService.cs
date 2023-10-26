@@ -2,8 +2,8 @@ using System.Reflection.Metadata;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
+using Domain.Models;
 using Shared.Dtos;
-using Shared.Models;
 
 namespace BlazorServer.Services.Http;
 

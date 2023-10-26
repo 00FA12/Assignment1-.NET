@@ -9,8 +9,7 @@
       "BlazorServer/1.0.0": {
         "dependencies": {
           "HttpClients": "1.0.0",
-          "Microsoft.AspNetCore.Components.Authorization": "7.0.13",
-          "Shared": "1.0.0"
+          "Microsoft.AspNetCore.Components.Authorization": "7.0.13"
         },
         "runtime": {
           "BlazorServer.dll": {}
@@ -85,6 +84,9 @@
       },
       "Microsoft.Extensions.Primitives/7.0.0": {},
       "Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.13"
+        },
         "runtime": {
           "Domain.dll": {}
         }
@@ -95,14 +97,6 @@
         },
         "runtime": {
           "HttpClients.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13"
-        },
-        "runtime": {
-          "Shared.dll": {}
         }
       }
     }
@@ -182,11 +176,6 @@
       "sha512": ""
     },
     "HttpClients/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

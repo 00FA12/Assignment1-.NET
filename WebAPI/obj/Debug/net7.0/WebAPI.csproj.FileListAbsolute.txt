@@ -58,5 +58,4 @@
 /Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
 /Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Shared.dll
-/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/Shared.pdb
+/Users/hmp/RiderProjects/Assignment1/WebAPI/bin/Debug/net7.0/WebAPI.staticwebassets.runtime.json

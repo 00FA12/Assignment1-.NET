@@ -366,6 +366,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.13"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
@@ -384,19 +387,6 @@
         },
         "runtime": {
           "bin/placeholder/FileData.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13"
-        },
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -1219,11 +1209,6 @@
       "type": "project",
       "path": "../FileData/FileData.csproj",
       "msbuildProject": "../FileData/FileData.csproj"
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1232,7 +1217,6 @@
       "FileData >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.13",
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
-      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -1266,9 +1250,6 @@
             },
             "/Users/hmp/RiderProjects/Assignment1/FileData/FileData.csproj": {
               "projectPath": "/Users/hmp/RiderProjects/Assignment1/FileData/FileData.csproj"
-            },
-            "/Users/hmp/RiderProjects/Assignment1/Shared/Shared.csproj": {
-              "projectPath": "/Users/hmp/RiderProjects/Assignment1/Shared/Shared.csproj"
             }
           }
         }

@@ -19,3 +19,9 @@
 /Users/hmp/RiderProjects/Assignment1/Application/obj/Debug/net7.0/Application.pdb
 /Users/hmp/RiderProjects/Assignment1/Application/obj/Debug/net7.0/Application.genruntimeconfig.cache
 /Users/hmp/RiderProjects/Assignment1/Application/obj/Debug/net7.0/ref/Application.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.AspNetCore.Authorization.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.AspNetCore.Metadata.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/Users/hmp/RiderProjects/Assignment1/Application/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll

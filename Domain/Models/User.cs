@@ -6,6 +6,7 @@ public class User
     public string password { get; set; }
 
     public int id { get; set; }
+    public int securityLevel { get; set;}
 
     public string toString()
     {

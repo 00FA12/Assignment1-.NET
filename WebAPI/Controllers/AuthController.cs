@@ -1,10 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Shared.Dtos;
-using Shared.Models;
 using WebAPI.Services;
 
 namespace WebAPI.Controllers;
@@ -29,8 +29,8 @@ public class AuthController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Sub, config["Jwt:Subject"]),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString()),
-            new Claim(ClaimTypes.Name, user.Username),
-            new Claim("SecurityLevel", user.SecurityLevel.ToString())
+            new Claim(ClaimTypes.Name, user.username),
+            new Claim("securityLevel", user.securityLevel.ToString())
         };
         return claims.ToList();
     }
@@ -72,6 +72,11 @@ public class AuthController : ControllerBase
             return BadRequest(e.Message);
         }
     }
-
+    [HttpPost, Route("register")]
+    public async Task<ActionResult> Register([FromBody] User user)
+    {
+        await authService.RegisterUser(user);
+        return Ok();
+    }
 
 }

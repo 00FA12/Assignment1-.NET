@@ -1,5 +1,8 @@
 using System.ComponentModel.DataAnnotations;
-using Shared.Models;
+using Application.DaoInterfaces;
+using Domain.Models;
+using FileData;
+using FileData.DAOs;
 
 namespace WebAPI.Services;
 
@@ -9,54 +12,52 @@ public class AuthService : IAuthService
     {
         new User
         {
-            Password = "onetwo3FOUR",
-            Username = "trmo",
-            SecurityLevel = 4
+            password = "test1",
+            username = "test1",
+            securityLevel = 4
         },
         new User
         {
-            Password = "password",
-            Username = "jknr",
-            SecurityLevel = 2
+            password = "password",
+            username = "jknr",
+            securityLevel = 2
         }
     };
+    private IUserDao _userDao = new UserFileDao(new FileContext());
 
-    public Task<User> ValidateUser(string username, string password)
+    public async Task<User> ValidateUser(string username, string password)
     {
-        User? existingUser = users.FirstOrDefault(u => 
-            u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+        User? existingUser = await _userDao.GetByUsernameAsync(username);
         
         if (existingUser == null)
         {
             throw new Exception("User not found");
         }
 
-        if (!existingUser.Password.Equals(password))
+        if (!existingUser.password.Equals(password))
         {
-            throw new Exception("Password mismatch");
+            throw new Exception("password mismatch");
         }
 
-        return Task.FromResult(existingUser);
+        return existingUser;
     }
     
 
     public Task RegisterUser(User user)
     {
 
-        if (string.IsNullOrEmpty(user.Username))
+        if (string.IsNullOrEmpty(user.username))
         {
-            throw new ValidationException("Username cannot be null");
+            throw new ValidationException("username cannot be null");
         }
 
-        if (string.IsNullOrEmpty(user.Password))
+        if (string.IsNullOrEmpty(user.password))
         {
-            throw new ValidationException("Password cannot be null");
+            throw new ValidationException("password cannot be null");
         }
         // Do more user info validation here
         
         // save to persistence instead of list
-        
-        users.Add(user);
         
         return Task.CompletedTask;
     }

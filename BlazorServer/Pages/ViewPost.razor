@@ -35,13 +35,12 @@
         <div class="form-group field">
             <label>Owner: @getUsername()</label>
         </div>
-        <AuthorizeView>
-            <Authorized>
-                <div class="button-row" @context.User.Claims.FirstOrDefault(claim => claim.Type.Equals(ClaimTypes.Role)).Value>
-                    <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
-                </div>
-            </Authorized>
-        </AuthorizeView>
+        @if (username.Equals(loggedUsername))
+        {
+            <div class="button-row">
+                <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
+            </div>
+        }
     }
     @if (!string.IsNullOrEmpty(msg))
     {
@@ -60,6 +59,10 @@
     private IEnumerable<User>? users;
     private PostBasicDto postData = null;
     private string username = "";
+    private string loggedUsername = "";
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
 
     protected override async Task OnInitializedAsync()
     {
@@ -72,6 +75,10 @@
             username = currentlyAssigned.username;
 
             dto = new PostEditDto(Id, currentlyAssigned.id, postData.title, postData.body);
+
+            AuthenticationState authState = await AuthState;
+            ClaimsPrincipal user = authState.User;
+            loggedUsername = user.Identity!.Name!;
         }
         catch (Exception e)
         {
@@ -102,6 +109,7 @@
         }
         return "no user found";
     }
-
+    
 
 }
+

@@ -144,6 +144,9 @@
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "7.0.13"
+        },
         "compile": {
           "bin/placeholder/Domain.dll": {}
         },
@@ -162,19 +165,6 @@
         },
         "runtime": {
           "bin/placeholder/HttpClients.dll": {}
-        }
-      },
-      "Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13"
-        },
-        "compile": {
-          "bin/placeholder/Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -428,18 +418,12 @@
       "type": "project",
       "path": "../HttpClients/HttpClients.csproj",
       "msbuildProject": "../HttpClients/HttpClients.csproj"
-    },
-    "Shared/1.0.0": {
-      "type": "project",
-      "path": "../Shared/Shared.csproj",
-      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "HttpClients >= 1.0.0",
-      "Microsoft.AspNetCore.Components.Authorization >= 7.0.13",
-      "Shared >= 1.0.0"
+      "Microsoft.AspNetCore.Components.Authorization >= 7.0.13"
     ]
   },
   "packageFolders": {
@@ -469,9 +453,6 @@
           "projectReferences": {
             "/Users/hmp/RiderProjects/Assignment1/HttpClients/HttpClients.csproj": {
               "projectPath": "/Users/hmp/RiderProjects/Assignment1/HttpClients/HttpClients.csproj"
-            },
-            "/Users/hmp/RiderProjects/Assignment1/Shared/Shared.csproj": {
-              "projectPath": "/Users/hmp/RiderProjects/Assignment1/Shared/Shared.csproj"
             }
           }
         }

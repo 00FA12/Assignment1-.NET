@@ -1,22 +1,10 @@
 {
   "Users": [
     {
-      "username": "paco",
-      "password": "paco1234",
+      "username": "test",
+      "password": "test",
       "id": 1,
       "securityLevel": 0
-    },
-    {
-      "username": "test",
-      "password": "test1",
-      "id": 2,
-      "securityLevel": 0
-    },
-    {
-      "username": "test2",
-      "password": "test2",
-      "id": 3,
-      "securityLevel": 4
     }
   ],
   "Posts": [

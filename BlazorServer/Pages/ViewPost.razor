@@ -33,9 +33,12 @@
             <textarea @bind="dto.newBody" style="width: 80%;height: 100px;"/>
         </div>
         <div class="form-group field">
-            <label>Owner: @getUsername()</label>
+            <label>Author: @getUsername()</label>
         </div>
-        @if (username.Equals(loggedUsername))
+        <div class="form-group field">
+            <label>Edited?: @edited()</label>
+        </div>
+        @if (isUsername())
         {
             <div class="button-row">
                 <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
@@ -60,9 +63,9 @@
     private PostBasicDto postData = null;
     private string username = "";
     private string loggedUsername = "";
-    
+
     [CascadingParameter]
-    public Task<AuthenticationState> AuthState { get; set; } = null!;
+    public Task<AuthenticationState?> AuthState { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -76,9 +79,12 @@
 
             dto = new PostEditDto(Id, currentlyAssigned.id, postData.title, postData.body);
 
-            AuthenticationState authState = await AuthState;
-            ClaimsPrincipal user = authState.User;
-            loggedUsername = user.Identity!.Name!;
+            AuthenticationState? authState = await AuthState;
+            ClaimsPrincipal? user = authState.User;
+            if (user.Identity != null)
+            {
+            loggedUsername = user.Identity.Name;
+            }
         }
         catch (Exception e)
         {
@@ -108,6 +114,20 @@
             return username;
         }
         return "no user found";
+    }
+
+    private string edited()
+    {
+        if (postData.edited)
+        {
+            return "Yes";
+        }
+        return "No";
+    }
+
+    private bool isUsername()
+    {
+        return username.Equals(loggedUsername);
     }
     
 

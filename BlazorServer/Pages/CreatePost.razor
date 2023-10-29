@@ -2,6 +2,7 @@
 @using Domain.DTOs
 @using Domain.Models
 @using HttpClients.ClientInterfaces
+@using System.Security.Claims
 @inject IPostService postService;
 @inject IUserService userService;
 @inject NavigationManager navMgr;
@@ -24,17 +25,7 @@
                     <label>Title:</label>
                     <input type="text" @bind="postTitle"/>
                     <label>Body:</label>
-                    <input type="text" @bind="postBody"/>
-                </div>
-                <div class="form-group field">
-                    <label>Assignee:</label>
-                    <select @bind="selectedUserId">
-                        <option>Choose</option>
-                        @foreach (User user in users)
-                        {
-                            <option value="@user.id">@user.username</option>
-                        }
-                    </select>
+                    <textarea @bind="postBody"/>
                 </div>
                 <div class="button-row">
                     @if (!string.IsNullOrEmpty(msg))
@@ -56,15 +47,25 @@
     private int? selectedUserId;
     private string postTitle = "";
     private string postBody = "";
+    private string loggedUsername = "";
 
     private string msg = "";
+    
+    [CascadingParameter]
+    public Task<AuthenticationState> AuthState { get; set; } = null!;
 
     protected override async Task OnInitializedAsync()
     {
         msg = "";
         try
         {
-            users = await userService.GetUsersAsync();
+            AuthenticationState authState = await AuthState;
+            ClaimsPrincipal user = authState.User;
+            loggedUsername = user.Identity!.Name!;
+
+            users = await userService.GetUsersAsync(null);
+            User? currentUser =  users.FirstOrDefault(u => u.username.Equals(loggedUsername));
+            selectedUserId = currentUser.id;
         }
         catch (Exception e)
         {
@@ -75,11 +76,7 @@
     private async Task Create()
     {
         msg = "";
-        if (selectedUserId == null)
-        {
-            msg = "You must select an assignee!";
-            return;
-        }
+        
         if (string.IsNullOrEmpty(postTitle))
         {
             msg = "Title cannot be empty!";
@@ -94,8 +91,7 @@
         {
             PostCreationDTO dto = new((int)selectedUserId, postTitle, postBody);
             await postService.CreateAsync(dto);
-            navMgr.NavigateTo("/");
-            //TODO Either put someting on / or make it go to the right place
+            navMgr.NavigateTo($"/ViewPosts");
         }
         catch (Exception e)
         {

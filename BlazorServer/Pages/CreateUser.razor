@@ -1,6 +1,8 @@
 @page "/CreateUser"
 @using Domain.DTOs
 @using HttpClients.ClientInterfaces
+@using BlazorServer.Services
+@inject NavigationManager nvNavigationManager;
 @inject IUserService userService;
 
 <div class="card">
@@ -37,6 +39,7 @@
             password = "";
             resultMsg = "User successfully created";
             color = "green";
+            nvNavigationManager.NavigateTo("/Login");
         }
         catch (Exception e)
         {

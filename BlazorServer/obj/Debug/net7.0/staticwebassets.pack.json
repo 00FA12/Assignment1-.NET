@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/BlazorServer.bundle.scp.css"
     },
     {
+      "Id": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },

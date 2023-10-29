@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FZsiXK5/3k2eGXSWvH9fwLbBFdSw6Gg+ox9rluoULro=",
+  "Hash": "C9DHXcvZPhlj2my4tMJXtEaGNeXHpLxYRAGDA1HEetw=",
   "Source": "BlazorServer",
   "BasePath": "_content/BlazorServer",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/obj/Debug/net7.0/scopedcss/projectbundle/BlazorServer.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/.DS_Store",
+      "SourceId": "BlazorServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/",
+      "BasePath": "_content/BlazorServer",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/hmp/RiderProjects/Assignment1/BlazorServer/wwwroot/css/bootstrap/bootstrap.min.css",

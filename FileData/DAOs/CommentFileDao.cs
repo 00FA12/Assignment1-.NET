@@ -33,4 +33,16 @@ public class CommentFileDao : ICommentDao
         Comment? existing = _context.Comments.FirstOrDefault(c => c.text.Equals(text, StringComparison.OrdinalIgnoreCase));
         return Task.FromResult(existing);
     }
+
+    public Task<IEnumerable<Comment?>> GetByPostIdAsync(int postId)
+    {
+        IEnumerable<Comment?> comments = _context.Comments.Where(c => c.post.id == postId);
+        return Task.FromResult(comments);
+    }
+
+    public Task<Comment?> GetByIdAsync(int commentId)
+    {
+        Comment? comment = _context.Comments.FirstOrDefault(c => c.id == commentId);
+        return Task.FromResult(comment);
+    }
 }

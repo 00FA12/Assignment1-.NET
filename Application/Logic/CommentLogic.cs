@@ -38,8 +38,17 @@ public class CommentLogic : ICommentLogic
         Comment created = await _commentDao.CreateAsync(toCreate);
         return created;
     }
-    
-    
+
+    public Task<Comment> GetByIdAsync(int commentId)
+    {
+        return _commentDao.GetByIdAsync(commentId);
+    }
+
+    public Task<IEnumerable<Comment?>> GetByPostIdAsync(int postId)
+    {
+        return _commentDao.GetByPostIdAsync(postId);
+    }
+
 
     private static void ValidateData(CommentCreationDto commentCreationDto)
     {

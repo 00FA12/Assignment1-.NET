@@ -4,8 +4,10 @@
 @using HttpClients.ClientInterfaces
 @using Microsoft.AspNetCore.Components
 @using System.Security.Claims
+@using System.Security.AccessControl
 @inject IPostService postService
 @inject IUserService userService
+@inject ICommentService commentService
 @inject NavigationManager navMgr
 
 <div class="card">
@@ -38,12 +40,42 @@
         <div class="form-group field">
             <label>Edited?: @edited()</label>
         </div>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Author</th>
+                <th>Comment</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in _comments)
+            {
+                <tr>
+                    <td>@item.author.username</td>
+                    <td>@item.text</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
         @if (isUsername())
         {
             <div class="button-row">
                 <button @onclick="UpdateAsync" class="acceptbtn">Update</button>
             </div>
         }
+        <AuthorizeView>
+            <Authorized>
+                <div class="form-group field">
+                    <label>Make your own comment!</label>
+                    <input type="text" @bind="comment"/>
+                </div>
+                <div class="button-row">
+                    <button @onclick=@createComment class="acceptbtn">Comment</button>
+                </div>
+            </Authorized>
+        </AuthorizeView>
     }
     @if (!string.IsNullOrEmpty(msg))
     {
@@ -63,6 +95,8 @@
     private PostBasicDto postData = null;
     private string username = "";
     private string loggedUsername = "";
+    private IEnumerable<Comment?> _comments;
+    private string comment = "";
 
     [CascadingParameter]
     public Task<AuthenticationState?> AuthState { get; set; }
@@ -74,6 +108,7 @@
         {
             users = await userService.GetUsersAsync();
             postData = await postService.GetByIdAsync(Id);
+            _comments = await commentService.GetByPostIdAsync(Id);
             User currentlyAssigned = users.First(user => user.username.Equals(postData.author.username));
             username = currentlyAssigned.username;
 
@@ -83,7 +118,7 @@
             ClaimsPrincipal? user = authState.User;
             if (user.Identity != null)
             {
-            loggedUsername = user.Identity.Name;
+                loggedUsername = user.Identity.Name;
             }
         }
         catch (Exception e)
@@ -129,7 +164,20 @@
     {
         return username.Equals(loggedUsername);
     }
-    
+
+    private async Task createComment()
+    {
+        if (string.IsNullOrEmpty(comment))
+        {
+            msg = "Your comment can't be empty!";
+        }
+        else
+        {
+            CommentCreationDto dto = new CommentCreationDto(this.comment, users.FirstOrDefault(u => u.username.Equals(loggedUsername)).id, Id);
+            await commentService.CreateAsync(dto);
+            _comments = await commentService.GetByPostIdAsync(Id);
+            comment = "";
+        }
+    }
 
 }
-

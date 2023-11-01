@@ -91,28 +91,158 @@
   ],
   "Comments": [
     {
-      "text": "6th attempt",
+      "text": "testcomment1",
       "author": {
-        "username": "paco",
-        "password": "paco1234",
+        "username": "test",
+        "password": "test",
         "id": 1,
         "securityLevel": 0
       },
       "post": {
-        "title": "string",
-        "body": "string",
+        "title": "testPost",
+        "body": "this is the body of a testPost",
         "author": {
-          "username": "paco",
-          "password": "paco1234",
+          "username": "test",
+          "password": "test",
           "id": 1,
           "securityLevel": 0
         },
-        "edited": true,
+        "edited": false,
         "id": 1,
         "upVote": 0,
         "downVote": 0
       },
       "id": 1,
+      "upvote": 0,
+      "downVote": 0
+    },
+    {
+      "text": "testcomment2",
+      "author": {
+        "username": "5test",
+        "password": "5test",
+        "id": 2,
+        "securityLevel": 0
+      },
+      "post": {
+        "title": "testPost",
+        "body": "this is the body of a testPost",
+        "author": {
+          "username": "test",
+          "password": "test",
+          "id": 1,
+          "securityLevel": 0
+        },
+        "edited": false,
+        "id": 1,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 2,
+      "upvote": 0,
+      "downVote": 0
+    },
+    {
+      "text": "testComment from the UI!",
+      "author": {
+        "username": "test",
+        "password": "test",
+        "id": 1,
+        "securityLevel": 0
+      },
+      "post": {
+        "title": "testPost",
+        "body": "this is the body of a testPost",
+        "author": {
+          "username": "test",
+          "password": "test",
+          "id": 1,
+          "securityLevel": 0
+        },
+        "edited": false,
+        "id": 1,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 3,
+      "upvote": 0,
+      "downVote": 0
+    },
+    {
+      "text": "Pole!",
+      "author": {
+        "username": "test",
+        "password": "test",
+        "id": 1,
+        "securityLevel": 0
+      },
+      "post": {
+        "title": "testPost2",
+        "body": "This is the body of another test post",
+        "author": {
+          "username": "5test",
+          "password": "5test",
+          "id": 2,
+          "securityLevel": 0
+        },
+        "edited": false,
+        "id": 2,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 4,
+      "upvote": 0,
+      "downVote": 0
+    },
+    {
+      "text": "Pole position!",
+      "author": {
+        "username": "test",
+        "password": "test",
+        "id": 1,
+        "securityLevel": 0
+      },
+      "post": {
+        "title": "testPost number x",
+        "body": "this is the nth body",
+        "author": {
+          "username": "test3",
+          "password": "test3",
+          "id": 4,
+          "securityLevel": 0
+        },
+        "edited": false,
+        "id": 3,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 5,
+      "upvote": 0,
+      "downVote": 0
+    },
+    {
+      "text": "testcomment",
+      "author": {
+        "username": "test",
+        "password": "test",
+        "id": 1,
+        "securityLevel": 0
+      },
+      "post": {
+        "title": "testPost number x",
+        "body": "this is the nth body",
+        "author": {
+          "username": "test3",
+          "password": "test3",
+          "id": 4,
+          "securityLevel": 0
+        },
+        "edited": false,
+        "id": 3,
+        "upVote": 0,
+        "downVote": 0
+      },
+      "id": 6,
       "upvote": 0,
       "downVote": 0
     }

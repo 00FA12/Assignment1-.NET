@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_comment_file_dao_8cs" kind="file" language="C#">
+    <compoundname>CommentFileDao.cs</compoundname>
+    <innerclass refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao" prot="public">FileData::DAOs::CommentFileDao</innerclass>
+    <innernamespace refid="namespace_file_data">FileData</innernamespace>
+    <innernamespace refid="namespace_file_data_1_1_d_a_os">FileData::DAOs</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_application_1_1_dao_interfaces" kindref="compound">Application.DaoInterfaces</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_models" kindref="compound">Domain.Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="namespace_file_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_file_data_1_1_d_a_os" kindref="compound">FileData.DAOs</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao" kindref="compound">CommentFileDao</ref><sp/>:<sp/><ref refid="interface_application_1_1_dao_interfaces_1_1_i_comment_dao" kindref="compound">ICommentDao</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>readonly<sp/><ref refid="class_file_data_1_1_file_context" kindref="compound">FileContext</ref><sp/>_context;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1ad1b85c92bc3c14a447312c0c3d803855" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1ad1b85c92bc3c14a447312c0c3d803855" kindref="member">CommentFileDao</ref>(<ref refid="class_file_data_1_1_file_context" kindref="compound">FileContext</ref><sp/>context)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context<sp/>=<sp/>context;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1a6af8a0f9f36d5f8a7bcd3083614a3b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Task&lt;Comment&gt;<sp/><ref refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1a6af8a0f9f36d5f8a7bcd3083614a3b32" kindref="member">CreateAsync</ref>(<ref refid="class_domain_1_1_models_1_1_comment" kindref="compound">Comment</ref><sp/>comment)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_context.Comments.Any())</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>_context.Comments.Max(c<sp/>=&gt;<sp/>c.id);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">++;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>comment.id<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context.Comments.Add(comment);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_context.SaveChanges();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Task.FromResult(comment);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1a8541654335ff69ad145d8c629a558872" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Task&lt;Comment?&gt;<sp/><ref refid="class_file_data_1_1_d_a_os_1_1_comment_file_dao_1a8541654335ff69ad145d8c629a558872" kindref="member">GetByContentAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>text)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_domain_1_1_models_1_1_comment" kindref="compound">Comment</ref>?<sp/>existing<sp/>=<sp/>_context.Comments.FirstOrDefault(c<sp/>=&gt;<sp/>c.text.Equals(text,<sp/>StringComparison.OrdinalIgnoreCase));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Task.FromResult(existing);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="FileData/DAOs/CommentFileDao.cs"/>
+  </compounddef>
+</doxygen>

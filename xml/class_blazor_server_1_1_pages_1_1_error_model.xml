@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_blazor_server_1_1_pages_1_1_error_model" kind="class" language="C#" prot="public">
+    <compoundname>BlazorServer::Pages::ErrorModel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PageModel</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_blazor_server_1_1_pages_1_1_error_model_1a64a11e459e94b89031c810e463bc34dc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? BlazorServer.Pages.ErrorModel.RequestId</definition>
+        <argsstring></argsstring>
+        <name>RequestId</name>
+        <qualifiedname>BlazorServer.Pages.ErrorModel.RequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Pages/Error.cshtml.cs" line="11" column="19" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_blazor_server_1_1_pages_1_1_error_model_1a66acd10f9c0cea60a3898c2cca55d120" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool BlazorServer.Pages.ErrorModel.ShowRequestId</definition>
+        <argsstring></argsstring>
+        <name>ShowRequestId</name>
+        <qualifiedname>BlazorServer.Pages.ErrorModel.ShowRequestId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Pages/Error.cshtml.cs" line="13" column="17" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_blazor_server_1_1_pages_1_1_error_model_1a68ff729119cc6927544febbca6296487" prot="private" static="no" mutable="no">
+        <type>readonly ILogger&lt; <ref refid="class_blazor_server_1_1_pages_1_1_error_model" kindref="compound">ErrorModel</ref> &gt;</type>
+        <definition>readonly ILogger&lt;ErrorModel&gt; BlazorServer.Pages.ErrorModel._logger</definition>
+        <argsstring></argsstring>
+        <name>_logger</name>
+        <qualifiedname>BlazorServer.Pages.ErrorModel._logger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Pages/Error.cshtml.cs" line="15" column="30" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blazor_server_1_1_pages_1_1_error_model_1ad05f197ab0c0c93e990eb678d169cb83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BlazorServer.Pages.ErrorModel.ErrorModel</definition>
+        <argsstring>(ILogger&lt; ErrorModel &gt; logger)</argsstring>
+        <name>ErrorModel</name>
+        <qualifiedname>BlazorServer.Pages.ErrorModel.ErrorModel</qualifiedname>
+        <param>
+          <type>ILogger&lt; <ref refid="class_blazor_server_1_1_pages_1_1_error_model" kindref="compound">ErrorModel</ref> &gt;</type>
+          <declname>logger</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Pages/Error.cshtml.cs" line="17" column="12" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_server_1_1_pages_1_1_error_model_1adcfcafec23bd0fbbe394f69aa181ef3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BlazorServer.Pages.ErrorModel.OnGet</definition>
+        <argsstring>()</argsstring>
+        <name>OnGet</name>
+        <qualifiedname>BlazorServer.Pages.ErrorModel.OnGet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Pages/Error.cshtml.cs" line="22" column="17" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>BlazorServer.Pages.ErrorModel</label>
+        <link refid="class_blazor_server_1_1_pages_1_1_error_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>BlazorServer.Pages.ErrorModel</label>
+        <link refid="class_blazor_server_1_1_pages_1_1_error_model"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PageModel</label>
+      </node>
+    </collaborationgraph>
+    <location file="BlazorServer/Pages/Error.cshtml.cs" line="9" column="7" bodyfile="BlazorServer/Pages/Error.cshtml.cs" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_blazor_server_1_1_pages_1_1_error_model_1a68ff729119cc6927544febbca6296487" prot="private" virt="non-virtual"><scope>BlazorServer::Pages::ErrorModel</scope><name>_logger</name></member>
+      <member refid="class_blazor_server_1_1_pages_1_1_error_model_1ad05f197ab0c0c93e990eb678d169cb83" prot="public" virt="non-virtual"><scope>BlazorServer::Pages::ErrorModel</scope><name>ErrorModel</name></member>
+      <member refid="class_blazor_server_1_1_pages_1_1_error_model_1adcfcafec23bd0fbbe394f69aa181ef3f" prot="public" virt="non-virtual"><scope>BlazorServer::Pages::ErrorModel</scope><name>OnGet</name></member>
+      <member refid="class_blazor_server_1_1_pages_1_1_error_model_1a64a11e459e94b89031c810e463bc34dc" prot="public" virt="non-virtual"><scope>BlazorServer::Pages::ErrorModel</scope><name>RequestId</name></member>
+      <member refid="class_blazor_server_1_1_pages_1_1_error_model_1a66acd10f9c0cea60a3898c2cca55d120" prot="public" virt="non-virtual"><scope>BlazorServer::Pages::ErrorModel</scope><name>ShowRequestId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

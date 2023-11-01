@@ -1,0 +1,125 @@
+\doxysection{Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service Class Reference}
+\hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service}{}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service}\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+Inheritance diagram for Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8a4d3112e2e21a3f70dc286f983a51a8}{Login\+Async}} (string username, string password)
+\item 
+Task \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_af759e6a52be064c225bf61a73a48a252}{Logout\+Async}} ()
+\item 
+async Task \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8f16f3b00d698af2eb07e46110697fee}{Register\+Async}} (\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} user)
+\item 
+Task$<$ Claims\+Principal $>$ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a30485fdeee939a82b32bbde75388b6ef}{Get\+Auth\+Async}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static ? string \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}} = "{}"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Action$<$ Claims\+Principal $>$ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}{On\+Auth\+State\+Changed}} = null!\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service}{Blazor\+Server.\+Services.\+IAuth\+Service}}}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a30485fdeee939a82b32bbde75388b6ef}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a30485fdeee939a82b32bbde75388b6ef} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!GetAuthAsync@{GetAuthAsync}}
+\index{GetAuthAsync@{GetAuthAsync}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{GetAuthAsync()}{GetAuthAsync()}}
+{\footnotesize\ttfamily Task$<$ Claims\+Principal $>$ Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Get\+Auth\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a8469fea975b25639b77653f85df1033a}{Blazor\+Server.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00082}{82}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8a4d3112e2e21a3f70dc286f983a51a8}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8a4d3112e2e21a3f70dc286f983a51a8} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!LoginAsync@{LoginAsync}}
+\index{LoginAsync@{LoginAsync}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{LoginAsync()}{LoginAsync()}}
+{\footnotesize\ttfamily async Task Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Login\+Async (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_aefd4499e3328f5932cb7c79145a7b7f2}{Blazor\+Server.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_af759e6a52be064c225bf61a73a48a252}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_af759e6a52be064c225bf61a73a48a252} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!LogoutAsync@{LogoutAsync}}
+\index{LogoutAsync@{LogoutAsync}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{LogoutAsync()}{LogoutAsync()}}
+{\footnotesize\ttfamily Task Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Logout\+Async (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3a1b7dbc47bb979d0dded7dd5ba6967b}{Blazor\+Server.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00061}{61}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8f16f3b00d698af2eb07e46110697fee}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8f16f3b00d698af2eb07e46110697fee} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!RegisterAsync@{RegisterAsync}}
+\index{RegisterAsync@{RegisterAsync}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{RegisterAsync()}{RegisterAsync()}}
+{\footnotesize\ttfamily async Task Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Register\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a16baec5a807d4fb9073efa102ba93dd6}{Blazor\+Server.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00069}{69}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!Jwt@{Jwt}}
+\index{Jwt@{Jwt}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{Jwt}{Jwt}}
+{\footnotesize\ttfamily ? string Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+Jwt = "{}"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+\Hypertarget{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}\label{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862} 
+\index{BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}!OnAuthStateChanged@{OnAuthStateChanged}}
+\index{OnAuthStateChanged@{OnAuthStateChanged}!BlazorServer.Services.Http.JwtAuthService@{BlazorServer.Services.Http.JwtAuthService}}
+\doxysubsubsection{\texorpdfstring{OnAuthStateChanged}{OnAuthStateChanged}}
+{\footnotesize\ttfamily Action$<$Claims\+Principal$>$ Blazor\+Server.\+Services.\+Http.\+Jwt\+Auth\+Service.\+On\+Auth\+State\+Changed = null!\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implements \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3530a294579eb47d1006512d6ee5990d}{Blazor\+Server.\+Services.\+IAuth\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_jwt_auth_service_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_jwt_auth_service_8cs_source}{Jwt\+Auth\+Service.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Blazor\+Server/\+Services/\mbox{\hyperlink{_jwt_auth_service_8cs}{Jwt\+Auth\+Service.\+cs}}\end{DoxyCompactItemize}

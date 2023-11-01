@@ -1,0 +1,74 @@
+\doxysection{Application.\+Dao\+Interfaces.\+IUser\+Dao Interface Reference}
+\hypertarget{interface_application_1_1_dao_interfaces_1_1_i_user_dao}{}\label{interface_application_1_1_dao_interfaces_1_1_i_user_dao}\index{Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}}
+Inheritance diagram for Application.\+Dao\+Interfaces.\+IUser\+Dao\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_application_1_1_dao_interfaces_1_1_i_user_dao}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a2c3760668124344c6cee00a248f6af4b}{Create\+Async}} (\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} user)
+\item 
+Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}?$>$ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_ac7f4cf93af9efcb75ade1145e8d8cc7b}{Get\+By\+Username\+Async}} (string username)
+\item 
+Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}?$>$ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a10b63e2599c29c8385b863e5052a1261}{Get\+By\+Id\+Async}} (int id)
+\item 
+Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ $>$ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_acd5697aae8cb67a3d2ea491c735c2be6}{Get\+Async}} (\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_user_parameters_dto}{Search\+User\+Parameters\+Dto}} search\+User\+Parameters)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_i_user_dao_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_i_user_dao_8cs_source}{IUser\+Dao.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a2c3760668124344c6cee00a248f6af4b}\label{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a2c3760668124344c6cee00a248f6af4b} 
+\index{Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ Application.\+Dao\+Interfaces.\+IUser\+Dao.\+Create\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_user_file_dao_a7a83fa2c4411346389a3511d4e0e58ee}{File\+Data.\+DAOs.\+User\+File\+Dao}}.
+
+\Hypertarget{interface_application_1_1_dao_interfaces_1_1_i_user_dao_acd5697aae8cb67a3d2ea491c735c2be6}\label{interface_application_1_1_dao_interfaces_1_1_i_user_dao_acd5697aae8cb67a3d2ea491c735c2be6} 
+\index{Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}!GetAsync@{GetAsync}}
+\index{GetAsync@{GetAsync}!Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}}
+\doxysubsubsection{\texorpdfstring{GetAsync()}{GetAsync()}}
+{\footnotesize\ttfamily Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ $>$ Application.\+Dao\+Interfaces.\+IUser\+Dao.\+Get\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_user_parameters_dto}{Search\+User\+Parameters\+Dto}}}]{search\+User\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_user_file_dao_a842f584b90cf9fe6ebeb3a2cee636398}{File\+Data.\+DAOs.\+User\+File\+Dao}}.
+
+\Hypertarget{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a10b63e2599c29c8385b863e5052a1261}\label{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a10b63e2599c29c8385b863e5052a1261} 
+\index{Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}!GetByIdAsync@{GetByIdAsync}}
+\index{GetByIdAsync@{GetByIdAsync}!Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}}
+\doxysubsubsection{\texorpdfstring{GetByIdAsync()}{GetByIdAsync()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}?$>$ Application.\+Dao\+Interfaces.\+IUser\+Dao.\+Get\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_user_file_dao_a7164ccbbedbc59626d7c700a0a446fd3}{File\+Data.\+DAOs.\+User\+File\+Dao}}.
+
+\Hypertarget{interface_application_1_1_dao_interfaces_1_1_i_user_dao_ac7f4cf93af9efcb75ade1145e8d8cc7b}\label{interface_application_1_1_dao_interfaces_1_1_i_user_dao_ac7f4cf93af9efcb75ade1145e8d8cc7b} 
+\index{Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}!GetByUsernameAsync@{GetByUsernameAsync}}
+\index{GetByUsernameAsync@{GetByUsernameAsync}!Application.DaoInterfaces.IUserDao@{Application.DaoInterfaces.IUserDao}}
+\doxysubsubsection{\texorpdfstring{GetByUsernameAsync()}{GetByUsernameAsync()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}?$>$ Application.\+Dao\+Interfaces.\+IUser\+Dao.\+Get\+By\+Username\+Async (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_user_file_dao_add941422984cc321c925fb35b9cc2d87}{File\+Data.\+DAOs.\+User\+File\+Dao}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Application/\+Dao\+Interfaces/\mbox{\hyperlink{_i_user_dao_8cs}{IUser\+Dao.\+cs}}\end{DoxyCompactItemize}

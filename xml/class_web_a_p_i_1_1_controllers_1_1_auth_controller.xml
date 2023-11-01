@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_web_a_p_i_1_1_controllers_1_1_auth_controller" kind="class" language="C#" prot="public">
+    <compoundname>WebAPI::Controllers::AuthController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a983536f642839752b21e6203db668582" prot="private" static="no" mutable="no">
+        <type>readonly IConfiguration</type>
+        <definition>readonly IConfiguration WebAPI.Controllers.AuthController.config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="17" column="37" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ab04ce55c60c6207fd8c0c13d721a3eae" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+        <definition>readonly IAuthService WebAPI.Controllers.AuthController.authService</definition>
+        <argsstring></argsstring>
+        <name>authService</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.authService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="18" column="35" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ac93715207e115bcf5498a40c6348872e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WebAPI.Controllers.AuthController.AuthController</definition>
+        <argsstring>(IConfiguration config, IAuthService authService)</argsstring>
+        <name>AuthController</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.AuthController</qualifiedname>
+        <param>
+          <type>IConfiguration</type>
+          <declname>config</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+          <declname>authService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="20" column="12" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a74aa20f1bb2b0a8b1f241ddf10dea281" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult &gt;</type>
+        <definition>async Task&lt; ActionResult &gt; WebAPI.Controllers.AuthController.Login</definition>
+        <argsstring>([FromBody] UserLoginDto userLoginDto)</argsstring>
+        <name>Login</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.Login</qualifiedname>
+        <param>
+          <attributes>[FromBody]</attributes>
+          <type><ref refid="class_shared_1_1_dtos_1_1_user_login_dto" kindref="compound">UserLoginDto</ref></type>
+          <declname>userLoginDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="61" column="23" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="61" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1af97b7367b994f217c501fb5e9b829df0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; ActionResult &gt;</type>
+        <definition>async Task&lt; ActionResult &gt; WebAPI.Controllers.AuthController.Register</definition>
+        <argsstring>([FromBody] User user)</argsstring>
+        <name>Register</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.Register</qualifiedname>
+        <param>
+          <attributes>[FromBody]</attributes>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="76" column="23" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a16eddcbd176e10d6a5aa2a66f31983c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Claim &gt;</type>
+        <definition>List&lt; Claim &gt; WebAPI.Controllers.AuthController.GenerateClaims</definition>
+        <argsstring>(User user)</argsstring>
+        <name>GenerateClaims</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.GenerateClaims</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="25" column="18" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="25" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a5ae17ffbc053e09d0ae40dfd648f068d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string WebAPI.Controllers.AuthController.GenerateJwt</definition>
+        <argsstring>(User user)</argsstring>
+        <name>GenerateJwt</name>
+        <qualifiedname>WebAPI.Controllers.AuthController.GenerateJwt</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/AuthController.cs" line="38" column="20" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="38" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.AuthController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.AuthController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="WebAPI/Controllers/AuthController.cs" line="15" column="7" bodyfile="WebAPI/Controllers/AuthController.cs" bodystart="16" bodyend="82"/>
+    <listofallmembers>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ac93715207e115bcf5498a40c6348872e" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>AuthController</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1ab04ce55c60c6207fd8c0c13d721a3eae" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>authService</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a983536f642839752b21e6203db668582" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>config</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a16eddcbd176e10d6a5aa2a66f31983c8" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>GenerateClaims</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a5ae17ffbc053e09d0ae40dfd648f068d" prot="private" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>GenerateJwt</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1a74aa20f1bb2b0a8b1f241ddf10dea281" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>Login</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller_1af97b7367b994f217c501fb5e9b829df0" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::AuthController</scope><name>Register</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

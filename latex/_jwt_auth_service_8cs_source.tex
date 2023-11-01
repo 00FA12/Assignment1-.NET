@@ -1,0 +1,118 @@
+\doxysection{Jwt\+Auth\+Service.\+cs}
+\hypertarget{_jwt_auth_service_8cs_source}{}\label{_jwt_auth_service_8cs_source}\index{BlazorServer/Services/JwtAuthService.cs@{BlazorServer/Services/JwtAuthService.cs}}
+\mbox{\hyperlink{_jwt_auth_service_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Reflection.Metadata;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Security.Claims;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Text.Json;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_shared_1_1_dtos}{Shared.Dtos}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00008}\mbox{\hyperlink{namespace_blazor_server_1_1_services_1_1_http}{00008}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_blazor_server_1_1_services_1_1_http}{BlazorServer.Services.Http}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00010}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service}{00010}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service}{JwtAuthService}}\ :\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service}{IAuthService}}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00012}00012\ \ \ \ \ \textcolor{keyword}{private}\ readonly\ HttpClient\ client\ =\ \textcolor{keyword}{new}\ ();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00014}00014\ \ \ \ \ \textcolor{comment}{//\ this\ private\ variable\ for\ simple\ caching}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00015}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{00015}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}?\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{private}\ \textcolor{keyword}{set};\ \}\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00017}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}{00017}}\ \ \ \ \ \textcolor{keyword}{public}\ Action<ClaimsPrincipal>\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}{OnAuthStateChanged}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}\ =\ \textcolor{keyword}{null}!;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00019}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8a4d3112e2e21a3f70dc286f983a51a8}{00019}}\ \ \ \ \ \textcolor{keyword}{public}\ async\ Task\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8a4d3112e2e21a3f70dc286f983a51a8}{LoginAsync}}(\textcolor{keywordtype}{string}\ username,\ \textcolor{keywordtype}{string}\ password)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00020}00020\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00021}00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shared_1_1_dtos_1_1_user_login_dto}{UserLoginDto}}\ userLoginDto\ =\ \textcolor{keyword}{new}()}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ Username\ =\ username,}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ Password\ =\ password}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ userAsJson\ =\ JsonSerializer.Serialize(userLoginDto);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ StringContent\ content\ =\ \textcolor{keyword}{new}(userAsJson,\ Encoding.UTF8,\ \textcolor{stringliteral}{"{}application/json"{}});}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ HttpResponseMessage\ response\ =\ await\ client.PostAsync(\textcolor{stringliteral}{"{}https://localhost:7230/auth/login"{}},\ content);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ responseContent\ =\ await\ response.Content.ReadAsStringAsync();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!response.IsSuccessStatusCode)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(responseContent);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ token\ =\ responseContent;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}}\ =\ token;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ ClaimsPrincipal\ principal\ =\ CreateClaimsPrincipal();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}{OnAuthStateChanged}}.Invoke(principal);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00044}00044\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00046}00046\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ ClaimsPrincipal\ CreateClaimsPrincipal()}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00047}00047\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}}))}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ ClaimsPrincipal();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ IEnumerable<Claim>\ claims\ =\ ParseClaimsFromJwt(\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}});}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ ClaimsIdentity\ identity\ =\ \textcolor{keyword}{new}(claims,\ \textcolor{stringliteral}{"{}jwt"{}});}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ ClaimsPrincipal\ principal\ =\ \textcolor{keyword}{new}(identity);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ principal;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00059}00059\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00061}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_af759e6a52be064c225bf61a73a48a252}{00061}}\ \ \ \ \ \textcolor{keyword}{public}\ Task\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_af759e6a52be064c225bf61a73a48a252}{LogoutAsync}}()}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00062}00062\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_aacf1062c18a8a720b5c222120dee011c}{Jwt}}\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ ClaimsPrincipal\ principal\ =\ \textcolor{keyword}{new}();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a2429d23d4cc7166915c176655f3b1862}{OnAuthStateChanged}}.Invoke(principal);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Task.CompletedTask;}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00067}00067\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00069}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8f16f3b00d698af2eb07e46110697fee}{00069}}\ \ \ \ \ \textcolor{keyword}{public}\ async\ Task\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a8f16f3b00d698af2eb07e46110697fee}{RegisterAsync}}(\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}\ user)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00070}00070\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ userAsJson\ =\ JsonSerializer.Serialize(user);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ StringContent\ content\ =\ \textcolor{keyword}{new}(userAsJson,\ Encoding.UTF8,\ \textcolor{stringliteral}{"{}application/json"{}});}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ HttpResponseMessage\ response\ =\ await\ client.PostAsync(\textcolor{stringliteral}{"{}https://localhost:7230/auth/register"{}},\ content);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ responseContent\ =\ await\ response.Content.ReadAsStringAsync();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!response.IsSuccessStatusCode)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ Exception(responseContent);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00082}\mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a30485fdeee939a82b32bbde75388b6ef}{00082}}\ \ \ \ \ \textcolor{keyword}{public}\ Task<ClaimsPrincipal>\ \mbox{\hyperlink{class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service_a30485fdeee939a82b32bbde75388b6ef}{GetAuthAsync}}()}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00083}00083\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ ClaimsPrincipal\ principal\ =\ CreateClaimsPrincipal();}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Task.FromResult(principal);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00086}00086\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00089}00089\ \ \ \ \ \textcolor{comment}{//\ Below\ methods\ stolen\ from\ https://github.com/SteveSandersonMS/presentation-\/2019-\/06-\/NDCOslo/blob/master/demos/MissionControl/MissionControl.Client/Util/ServiceExtensions.cs}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00090}00090\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ IEnumerable<Claim>\ ParseClaimsFromJwt(\textcolor{keywordtype}{string}\ jwt)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00091}00091\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ payload\ =\ jwt.Split(\textcolor{charliteral}{'.'})[1];}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{byte}[]\ jsonBytes\ =\ ParseBase64WithoutPadding(payload);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ Dictionary<string,\ object>?\ keyValuePairs\ =\ JsonSerializer.Deserialize<Dictionary<string,\ object>>(jsonBytes);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ keyValuePairs!.Select(kvp\ =>\ \textcolor{keyword}{new}\ Claim(kvp.Key,\ kvp.Value.ToString()!));}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00098}00098\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{byte}[]\ ParseBase64WithoutPadding(\textcolor{keywordtype}{string}\ base64)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00099}00099\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (base64.Length\ \%\ 4)}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ base64\ +=\ \textcolor{stringliteral}{"{}=="{}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ base64\ +=\ \textcolor{stringliteral}{"{}="{}};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Convert.FromBase64String(base64);}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_jwt_auth_service_8cs_source_l00112}00112\ \}}
+
+\end{DoxyCode}

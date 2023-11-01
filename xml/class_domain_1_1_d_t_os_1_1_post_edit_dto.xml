@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_d_t_os_1_1_post_edit_dto" kind="class" language="C#" prot="public">
+    <compoundname>Domain::DTOs::PostEditDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_edit_dto_1aeeda045b9049e35db89281fd4306ef59" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.DTOs.PostEditDto.postId</definition>
+        <argsstring></argsstring>
+        <name>postId</name>
+        <qualifiedname>Domain.DTOs.PostEditDto.postId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostEditDto.cs" line="5" column="16" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_edit_dto_1afa9543c2fff4a4f8838562d624cd89dc" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.DTOs.PostEditDto.ownerId</definition>
+        <argsstring></argsstring>
+        <name>ownerId</name>
+        <qualifiedname>Domain.DTOs.PostEditDto.ownerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostEditDto.cs" line="6" column="16" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a0f6fafadf61fe69209663ce40f228161" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostEditDto.newTitle</definition>
+        <argsstring></argsstring>
+        <name>newTitle</name>
+        <qualifiedname>Domain.DTOs.PostEditDto.newTitle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostEditDto.cs" line="7" column="19" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a16c33a4da83c9175b58f307366990156" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string?</type>
+        <definition>string? Domain.DTOs.PostEditDto.newBody</definition>
+        <argsstring></argsstring>
+        <name>newBody</name>
+        <qualifiedname>Domain.DTOs.PostEditDto.newBody</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostEditDto.cs" line="8" column="19" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a5cfa285f89c7b70d9b71595803274d81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.DTOs.PostEditDto.PostEditDto</definition>
+        <argsstring>(int postId, int ownerId, string? newTitle, string? newBody)</argsstring>
+        <name>PostEditDto</name>
+        <qualifiedname>Domain.DTOs.PostEditDto.PostEditDto</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>postId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ownerId</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>newTitle</declname>
+        </param>
+        <param>
+          <type>string?</type>
+          <declname>newBody</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/PostEditDto.cs" line="10" column="12" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="10" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/DTOs/PostEditDto.cs" line="3" column="7" bodyfile="Domain/DTOs/PostEditDto.cs" bodystart="4" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a16c33a4da83c9175b58f307366990156" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostEditDto</scope><name>newBody</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a0f6fafadf61fe69209663ce40f228161" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostEditDto</scope><name>newTitle</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_edit_dto_1afa9543c2fff4a4f8838562d624cd89dc" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostEditDto</scope><name>ownerId</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_edit_dto_1a5cfa285f89c7b70d9b71595803274d81" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostEditDto</scope><name>PostEditDto</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_post_edit_dto_1aeeda045b9049e35db89281fd4306ef59" prot="public" virt="non-virtual"><scope>Domain::DTOs::PostEditDto</scope><name>postId</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

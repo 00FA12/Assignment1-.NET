@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_file_data_1_1_d_a_os_1_1_user_file_dao" kind="class" language="C#" prot="public">
+    <compoundname>FileData::DAOs::UserFileDao</compoundname>
+    <basecompoundref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" prot="public" virt="non-virtual">Application.DaoInterfaces.IUserDao</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a618e39eecfb2fd272dd3c5a473c9940d" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_file_data_1_1_file_context" kindref="compound">FileContext</ref></type>
+        <definition>readonly FileContext FileData.DAOs.UserFileDao._context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>FileData.DAOs.UserFileDao._context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="9" column="34" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a56b8038bd4ba5781b7c85aee495acda8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FileData.DAOs.UserFileDao.UserFileDao</definition>
+        <argsstring>(FileContext context)</argsstring>
+        <name>UserFileDao</name>
+        <qualifiedname>FileData.DAOs.UserFileDao.UserFileDao</qualifiedname>
+        <param>
+          <type><ref refid="class_file_data_1_1_file_context" kindref="compound">FileContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="11" column="12" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7a83fa2c4411346389a3511d4e0e58ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>Task&lt; User &gt; FileData.DAOs.UserFileDao.CreateAsync</definition>
+        <argsstring>(User user)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>FileData.DAOs.UserFileDao.CreateAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a2c3760668124344c6cee00a248f6af4b">CreateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="16" column="17" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="16" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1add941422984cc321c925fb35b9cc2d87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref>?&gt;</type>
+        <definition>Task&lt; User?&gt; FileData.DAOs.UserFileDao.GetByUsernameAsync</definition>
+        <argsstring>(string username)</argsstring>
+        <name>GetByUsernameAsync</name>
+        <qualifiedname>FileData.DAOs.UserFileDao.GetByUsernameAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1ac7f4cf93af9efcb75ade1145e8d8cc7b">GetByUsernameAsync</reimplements>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="41" column="17" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="41" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7164ccbbedbc59626d7c700a0a446fd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref>?&gt;</type>
+        <definition>Task&lt; User?&gt; FileData.DAOs.UserFileDao.GetByIdAsync</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetByIdAsync</name>
+        <qualifiedname>FileData.DAOs.UserFileDao.GetByIdAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a10b63e2599c29c8385b863e5052a1261">GetByIdAsync</reimplements>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="47" column="17" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a842f584b90cf9fe6ebeb3a2cee636398" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; User &gt; &gt; FileData.DAOs.UserFileDao.GetAsync</definition>
+        <argsstring>(SearchUserParametersDto searchUserParameters)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>FileData.DAOs.UserFileDao.GetAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1acd5697aae8cb67a3d2ea491c735c2be6">GetAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto" kindref="compound">SearchUserParametersDto</ref></type>
+          <declname>searchUserParameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="FileData/DAOs/UserFileDao.cs" line="53" column="17" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="53" bodyend="63"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>FileData.DAOs.UserFileDao</label>
+        <link refid="class_file_data_1_1_d_a_os_1_1_user_file_dao"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IUserDao</label>
+        <link refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>FileData.DAOs.UserFileDao</label>
+        <link refid="class_file_data_1_1_d_a_os_1_1_user_file_dao"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IUserDao</label>
+        <link refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao"/>
+      </node>
+    </collaborationgraph>
+    <location file="FileData/DAOs/UserFileDao.cs" line="7" column="7" bodyfile="FileData/DAOs/UserFileDao.cs" bodystart="8" bodyend="64"/>
+    <listofallmembers>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a618e39eecfb2fd272dd3c5a473c9940d" prot="private" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>_context</name></member>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7a83fa2c4411346389a3511d4e0e58ee" prot="public" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>CreateAsync</name></member>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a842f584b90cf9fe6ebeb3a2cee636398" prot="public" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>GetAsync</name></member>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7164ccbbedbc59626d7c700a0a446fd3" prot="public" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>GetByIdAsync</name></member>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1add941422984cc321c925fb35b9cc2d87" prot="public" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>GetByUsernameAsync</name></member>
+      <member refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a56b8038bd4ba5781b7c85aee495acda8" prot="public" virt="non-virtual"><scope>FileData::DAOs::UserFileDao</scope><name>UserFileDao</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

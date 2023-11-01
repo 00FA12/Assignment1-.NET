@@ -1,0 +1,86 @@
+\doxysection{Program.\+cs}
+\hypertarget{_web_a_p_i_2_program_8cs_source}{}\label{_web_a_p_i_2_program_8cs_source}\index{WebAPI/Program.cs@{WebAPI/Program.cs}}
+\mbox{\hyperlink{_web_a_p_i_2_program_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_application_1_1_dao_interfaces}{Application.DaoInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_application_1_1_logic}{Application.Logic}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_application_1_1_logic_interfaces}{Application.LogicInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00005}00005\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_file_data}{FileData}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00006}00006\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_file_data_1_1_d_a_os}{FileData.DAOs}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00007}00007\ \textcolor{keyword}{using\ }Microsoft.AspNetCore.Authentication.JwtBearer;}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00008}00008\ \textcolor{keyword}{using\ }Microsoft.IdentityModel.Tokens;}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00009}00009\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_shared_1_1_auth}{Shared.Auth}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00010}00010\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_web_a_p_i_1_1_services}{WebAPI.Services}};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00012}00012\ \textcolor{keyword}{internal}\ \textcolor{keyword}{class\ }Program}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00014}00014\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ Main(\textcolor{keywordtype}{string}[]\ args)}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}\ =\ WebApplication.CreateBuilder(args);}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00018}00018\ \textcolor{comment}{//\ Add\ services\ to\ the\ container.}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00020}00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddControllers();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00021}00021\ \textcolor{comment}{//\ Learn\ more\ about\ configuring\ Swagger/OpenAPI\ at\ https://aka.ms/aspnetcore/swashbuckle}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00022}00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddEndpointsApiExplorer();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddSwaggerGen();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{class_file_data_1_1_file_context}{FileContext}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao}{IUserDao}},\ \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_user_file_dao}{UserFileDao}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_user_logic}{IUserLogic}},\ \mbox{\hyperlink{class_application_1_1_logic_1_1_user_logic}{UserLogic}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao}{IPostDao}},\ \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_post_file_dao}{PostFileDao}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic}{IPostLogic}},\ \mbox{\hyperlink{class_application_1_1_logic_1_1_post_logic}{PostLogic}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_comment_dao}{ICommentDao}},\ \mbox{\hyperlink{class_file_data_1_1_d_a_os_1_1_comment_file_dao}{CommentFileDao}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_comment_logic}{ICommentLogic}},\ \mbox{\hyperlink{class_application_1_1_logic_1_1_comment_logic}{CommentLogic}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options\ =>}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00035}00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ options.RequireHttpsMetadata\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ options.SaveToken\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ options.TokenValidationParameters\ =\ \textcolor{keyword}{new}\ TokenValidationParameters()}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValidateIssuer\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValidateAudience\ =\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValidAudience\ =\ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Configuration[\textcolor{stringliteral}{"{}Jwt:Audience"{}}],}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ValidIssuer\ =\ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Configuration[\textcolor{stringliteral}{"{}Jwt:Issuer"{}}],}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ IssuerSigningKey\ =\ \textcolor{keyword}{new}\ SymmetricSecurityKey(Encoding.UTF8.GetBytes(\mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Configuration[\textcolor{stringliteral}{"{}Jwt:Key"{}}]))}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ AuthorizationPolicies.AddPolicies(\mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services);}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00049}00049\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Services.AddScoped<\mbox{\hyperlink{interface_web_a_p_i_1_1_services_1_1_i_auth_service}{IAuthService}},\ \mbox{\hyperlink{class_web_a_p_i_1_1_services_1_1_auth_service}{AuthService}}>();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ var\ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}\ =\ \mbox{\hyperlink{_blazor_server_2_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}.Build();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseCors(x\ =>\ x}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyMethod()}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ .AllowAnyHeader()}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ .SetIsOriginAllowed(origin\ =>\ \textcolor{keyword}{true})\ \textcolor{comment}{//\ allow\ any\ origin}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ .AllowCredentials());}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00063}00063\ \textcolor{comment}{//\ Configure\ the\ HTTP\ request\ pipeline.}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.Environment.IsDevelopment())}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseSwagger();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseSwaggerUI();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseHttpsRedirection();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseAuthentication();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.UseAuthorization();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.MapControllers();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_blazor_server_2_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}}.Run();}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_web_a_p_i_2_program_8cs_source_l00080}00080\ \}}
+
+\end{DoxyCode}

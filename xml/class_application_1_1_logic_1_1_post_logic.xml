@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_application_1_1_logic_1_1_post_logic" kind="class" language="C#" prot="public">
+    <compoundname>Application::Logic::PostLogic</compoundname>
+    <basecompoundref refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic" prot="public" virt="non-virtual">Application.LogicInterfaces.IPostLogic</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1_1_logic_1_1_post_logic_1a2343be24d94af92add4484d535c8b4da" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao" kindref="compound">IPostDao</ref></type>
+        <definition>readonly IPostDao Application.Logic.PostLogic._postDao</definition>
+        <argsstring></argsstring>
+        <name>_postDao</name>
+        <qualifiedname>Application.Logic.PostLogic._postDao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="10" column="31" bodyfile="Application/Logic/PostLogic.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_logic_1_1_post_logic_1aaef97e6d53e45d573e87b320fd65fc69" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kindref="compound">IUserDao</ref></type>
+        <definition>readonly IUserDao Application.Logic.PostLogic._userDao</definition>
+        <argsstring></argsstring>
+        <name>_userDao</name>
+        <qualifiedname>Application.Logic.PostLogic._userDao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="11" column="31" bodyfile="Application/Logic/PostLogic.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1ae9d745e7b6ba6fa1640d4e8ce3a8e782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application.Logic.PostLogic.PostLogic</definition>
+        <argsstring>(IPostDao postDao, IUserDao userDao)</argsstring>
+        <name>PostLogic</name>
+        <qualifiedname>Application.Logic.PostLogic.PostLogic</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao" kindref="compound">IPostDao</ref></type>
+          <declname>postDao</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kindref="compound">IUserDao</ref></type>
+          <declname>userDao</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="13" column="12" bodyfile="Application/Logic/PostLogic.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1ae81d3bffbdc15c670e4569043931a87d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>async Task&lt; Post &gt; Application.Logic.PostLogic.CreateAsync</definition>
+        <argsstring>(PostCreationDTO postToCreate)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>Application.Logic.PostLogic.CreateAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic_1a3372e6f3d7f31c715775e74753095d96">CreateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_creation_d_t_o" kindref="compound">PostCreationDTO</ref></type>
+          <declname>postToCreate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="19" column="23" bodyfile="Application/Logic/PostLogic.cs" bodystart="19" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1a37e06f6c43a9a10d46d8cebaa3293f13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; Post &gt; &gt; Application.Logic.PostLogic.GetAsync</definition>
+        <argsstring>(SearchPostParametersDto searchPostParametersDto)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>Application.Logic.PostLogic.GetAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic_1ae2410bf9ba2bb11cd0ba21137048ad4d">GetAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto" kindref="compound">SearchPostParametersDto</ref></type>
+          <declname>searchPostParametersDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="39" column="17" bodyfile="Application/Logic/PostLogic.cs" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1acec755b2620880b6df341d7519416edf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task</type>
+        <definition>async Task Application.Logic.PostLogic.UpdateAsync</definition>
+        <argsstring>(PostEditDto post)</argsstring>
+        <name>UpdateAsync</name>
+        <qualifiedname>Application.Logic.PostLogic.UpdateAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic_1ab8231a158e486f868891b81244d52e39">UpdateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_edit_dto" kindref="compound">PostEditDto</ref></type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="44" column="23" bodyfile="Application/Logic/PostLogic.cs" bodystart="44" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1ad1ef28d5184eac3ff03a5d79fac7db8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_domain_1_1_d_t_os_1_1_post_basic_dto" kindref="compound">PostBasicDto</ref> &gt;</type>
+        <definition>async Task&lt; PostBasicDto &gt; Application.Logic.PostLogic.GetByIdAsync</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetByIdAsync</name>
+        <qualifiedname>Application.Logic.PostLogic.GetByIdAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic_1ad1ca02a5fc9edcb907017d65df3a9c84">GetByIdAsync</reimplements>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="71" column="23" bodyfile="Application/Logic/PostLogic.cs" bodystart="71" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1a501ab253141392cf6f2ff7b7f5ad1945" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Application.Logic.PostLogic.validatePost</definition>
+        <argsstring>(Post post)</argsstring>
+        <name>validatePost</name>
+        <qualifiedname>Application.Logic.PostLogic.validatePost</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref></type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="82" column="25" bodyfile="Application/Logic/PostLogic.cs" bodystart="82" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_post_logic_1aa4b559a224511ff0e94cab0da51f0934" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Application.Logic.PostLogic.ValidateData</definition>
+        <argsstring>(PostCreationDTO postToCreate)</argsstring>
+        <name>ValidateData</name>
+        <qualifiedname>Application.Logic.PostLogic.ValidateData</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_post_creation_d_t_o" kindref="compound">PostCreationDTO</ref></type>
+          <declname>postToCreate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/PostLogic.cs" line="102" column="25" bodyfile="Application/Logic/PostLogic.cs" bodystart="102" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.Logic.PostLogic</label>
+        <link refid="class_application_1_1_logic_1_1_post_logic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPostLogic</label>
+        <link refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Application.Logic.PostLogic</label>
+        <link refid="class_application_1_1_logic_1_1_post_logic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>IPostLogic</label>
+        <link refid="interface_application_1_1_logic_interfaces_1_1_i_post_logic"/>
+      </node>
+    </collaborationgraph>
+    <location file="Application/Logic/PostLogic.cs" line="8" column="7" bodyfile="Application/Logic/PostLogic.cs" bodystart="9" bodyend="121"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1a2343be24d94af92add4484d535c8b4da" prot="private" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>_postDao</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1aaef97e6d53e45d573e87b320fd65fc69" prot="private" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>_userDao</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1ae81d3bffbdc15c670e4569043931a87d" prot="public" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>CreateAsync</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1a37e06f6c43a9a10d46d8cebaa3293f13" prot="public" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>GetAsync</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1ad1ef28d5184eac3ff03a5d79fac7db8e" prot="public" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>GetByIdAsync</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1ae9d745e7b6ba6fa1640d4e8ce3a8e782" prot="public" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>PostLogic</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1acec755b2620880b6df341d7519416edf" prot="public" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>UpdateAsync</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1aa4b559a224511ff0e94cab0da51f0934" prot="private" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>ValidateData</name></member>
+      <member refid="class_application_1_1_logic_1_1_post_logic_1a501ab253141392cf6f2ff7b7f5ad1945" prot="private" virt="non-virtual"><scope>Application::Logic::PostLogic</scope><name>validatePost</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

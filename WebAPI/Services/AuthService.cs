@@ -8,21 +8,6 @@ namespace WebAPI.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly IList<User> users = new List<User>
-    {
-        new User
-        {
-            password = "test1",
-            username = "test1",
-            securityLevel = 4
-        },
-        new User
-        {
-            password = "password",
-            username = "jknr",
-            securityLevel = 2
-        }
-    };
     private IUserDao _userDao = new UserFileDao(new FileContext());
 
     public async Task<User> ValidateUser(string username, string password)

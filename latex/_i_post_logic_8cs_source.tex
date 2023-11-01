@@ -1,0 +1,20 @@
+\doxysection{IPost\+Logic.\+cs}
+\hypertarget{_i_post_logic_8cs_source}{}\label{_i_post_logic_8cs_source}\index{Application/LogicInterfaces/IPostLogic.cs@{Application/LogicInterfaces/IPostLogic.cs}}
+\mbox{\hyperlink{_i_post_logic_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_d_t_os}{Domain.DTOs}};}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00004}00004\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_application_1_1_logic_interfaces}{Application.LogicInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00006}\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic}{IPostLogic}}}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00008}\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_a3372e6f3d7f31c715775e74753095d96}{00008}}\ \ \ \ \ Task<Post>\ \mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_a3372e6f3d7f31c715775e74753095d96}{CreateAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_creation_d_t_o}{PostCreationDTO}}\ postToCreate);}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00009}\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ae2410bf9ba2bb11cd0ba21137048ad4d}{00009}}\ \ \ \ \ Task<IEnumerable<Post>>\ \mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ae2410bf9ba2bb11cd0ba21137048ad4d}{GetAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_post_parameters_dto}{SearchPostParametersDto}}\ searchPostParametersDto);}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00011}\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ab8231a158e486f868891b81244d52e39}{00011}}\ \ \ \ \ Task\ \mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ab8231a158e486f868891b81244d52e39}{UpdateAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_edit_dto}{PostEditDto}}\ post);}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00012}\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ad1ca02a5fc9edcb907017d65df3a9c84}{00012}}\ \ \ \ \ Task<PostBasicDto>\ \mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_post_logic_ad1ca02a5fc9edcb907017d65df3a9c84}{GetByIdAsync}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_i_post_logic_8cs_source_l00014}00014\ \}}
+
+\end{DoxyCode}

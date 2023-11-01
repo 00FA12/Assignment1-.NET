@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kind="interface" language="C#" prot="public">
+    <compoundname>Application::DaoInterfaces::IUserDao</compoundname>
+    <derivedcompoundref refid="class_file_data_1_1_d_a_os_1_1_user_file_dao" prot="public" virt="non-virtual">FileData.DAOs.UserFileDao</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a2c3760668124344c6cee00a248f6af4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt;</type>
+        <definition>Task&lt; User &gt; Application.DaoInterfaces.IUserDao.CreateAsync</definition>
+        <argsstring>(User user)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IUserDao.CreateAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7a83fa2c4411346389a3511d4e0e58ee">CreateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>user</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IUserDao.cs" line="8" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1ac7f4cf93af9efcb75ade1145e8d8cc7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref>?&gt;</type>
+        <definition>Task&lt; User?&gt; Application.DaoInterfaces.IUserDao.GetByUsernameAsync</definition>
+        <argsstring>(string username)</argsstring>
+        <name>GetByUsernameAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IUserDao.GetByUsernameAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1add941422984cc321c925fb35b9cc2d87">GetByUsernameAsync</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IUserDao.cs" line="9" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a10b63e2599c29c8385b863e5052a1261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref>?&gt;</type>
+        <definition>Task&lt; User?&gt; Application.DaoInterfaces.IUserDao.GetByIdAsync</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetByIdAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IUserDao.GetByIdAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a7164ccbbedbc59626d7c700a0a446fd3">GetByIdAsync</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IUserDao.cs" line="10" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1acd5697aae8cb67a3d2ea491c735c2be6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; User &gt; &gt; Application.DaoInterfaces.IUserDao.GetAsync</definition>
+        <argsstring>(SearchUserParametersDto searchUserParameters)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IUserDao.GetAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_user_file_dao_1a842f584b90cf9fe6ebeb3a2cee636398">GetAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto" kindref="compound">SearchUserParametersDto</ref></type>
+          <declname>searchUserParameters</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IUserDao.cs" line="11" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.DaoInterfaces.IUserDao</label>
+        <link refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao"/>
+      </node>
+      <node id="2">
+        <label>FileData.DAOs.UserFileDao</label>
+        <link refid="class_file_data_1_1_d_a_os_1_1_user_file_dao"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Application/DaoInterfaces/IUserDao.cs" line="6" column="18" bodyfile="Application/DaoInterfaces/IUserDao.cs" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a2c3760668124344c6cee00a248f6af4b" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IUserDao</scope><name>CreateAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1acd5697aae8cb67a3d2ea491c735c2be6" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IUserDao</scope><name>GetAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a10b63e2599c29c8385b863e5052a1261" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IUserDao</scope><name>GetByIdAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1ac7f4cf93af9efcb75ade1145e8d8cc7b" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IUserDao</scope><name>GetByUsernameAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

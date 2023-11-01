@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_56c4d5777da4f504364bf4f0d1584188" kind="dir">
+    <compoundname>BlazorServer/obj</compoundname>
+    <innerdir refid="dir_b6e52440f130aad0e476092be2393136">BlazorServer/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="BlazorServer/obj/"/>
+  </compounddef>
+</doxygen>

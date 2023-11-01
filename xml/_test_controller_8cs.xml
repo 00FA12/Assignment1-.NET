@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_test_controller_8cs" kind="file" language="C#">
+    <compoundname>TestController.cs</compoundname>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_test_controller" prot="public">WebAPI::Controllers::TestController</innerclass>
+    <innernamespace refid="namespace_web_a_p_i">WebAPI</innernamespace>
+    <innernamespace refid="namespace_web_a_p_i_1_1_controllers">WebAPI::Controllers</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_asp_net_core_1_1_authorization">Microsoft::AspNetCore::Authorization</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Security.Claims;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Authorization;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.AspNetCore.Mvc;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_web_a_p_i_1_1_controllers" kindref="compound">WebAPI.Controllers</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">[ApiController]</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">[Route(</highlight><highlight class="stringliteral">&quot;[controller]&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">[Authorize]</highlight></codeline>
+<codeline lineno="10" refid="class_web_a_p_i_1_1_controllers_1_1_test_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_web_a_p_i_1_1_controllers_1_1_test_controller" kindref="compound">TestController</ref><sp/>:<sp/>ControllerBase</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>[HttpGet(</highlight><highlight class="stringliteral">&quot;authorized&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="13" refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a179a0f8f279256ef350ae3d612468ae5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ActionResult<sp/><ref refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a179a0f8f279256ef350ae3d612468ae5" kindref="member">GetAsAuthorized</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ok(</highlight><highlight class="stringliteral">&quot;This<sp/>was<sp/>accepted<sp/>as<sp/>authorized&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>[HttpGet(</highlight><highlight class="stringliteral">&quot;allowanon&quot;</highlight><highlight class="normal">),<sp/>AllowAnonymous]</highlight></codeline>
+<codeline lineno="19" refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a645fc2a0471e07ab33391c684a696b44" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ActionResult<sp/><ref refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a645fc2a0471e07ab33391c684a696b44" kindref="member">GetAsAnon</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ok(</highlight><highlight class="stringliteral">&quot;This<sp/>was<sp/>accepted<sp/>as<sp/>anonymous&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*[HttpGet(&quot;manualcheck&quot;)]</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>public<sp/>ActionResult<sp/>GetWithManualCheck()</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Claim?<sp/>claim<sp/>=<sp/>User.Claims.FirstOrDefault(claim<sp/>=&gt;<sp/>claim.Type.Equals(ClaimTypes.Role));</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(claim<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>StatusCode(403,<sp/>&quot;You<sp/>have<sp/>no<sp/>role&quot;);</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!claim.Value.Equals(&quot;Teacher&quot;))</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>StatusCode(403,<sp/>&quot;You<sp/>are<sp/>not<sp/>a<sp/>teacher&quot;);</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>Ok(&quot;You<sp/>are<sp/>a<sp/>teacher,<sp/>you<sp/>may<sp/>proceed&quot;);</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="WebAPI/Controllers/TestController.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="interface_application_1_1_dao_interfaces_1_1_i_post_dao" kind="interface" language="C#" prot="public">
+    <compoundname>Application::DaoInterfaces::IPostDao</compoundname>
+    <derivedcompoundref refid="class_file_data_1_1_d_a_os_1_1_post_file_dao" prot="public" virt="non-virtual">FileData.DAOs.PostFileDao</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1af6fcb74404767533d854e2b09f39d832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>Task&lt; Post &gt; Application.DaoInterfaces.IPostDao.CreateAsync</definition>
+        <argsstring>(Post post)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.CreateAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1accf375a8037290c09e6aac5bbc4af58c">CreateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref></type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="8" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1aeca24d27109679d2b6202ee4202a4c5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref>?&gt;</type>
+        <definition>Task&lt; Post?&gt; Application.DaoInterfaces.IPostDao.GetByTitle</definition>
+        <argsstring>(string title)</argsstring>
+        <name>GetByTitle</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.GetByTitle</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1ae8dc93ced042133a413f35bdcf898939">GetByTitle</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="9" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a9237ff4d33eb0592ab8af372d0886527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref>?&gt;</type>
+        <definition>Task&lt; Post?&gt; Application.DaoInterfaces.IPostDao.GetByBody</definition>
+        <argsstring>(string body)</argsstring>
+        <name>GetByBody</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.GetByBody</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a25125917c6c44a14507c7b537d685cfc">GetByBody</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="10" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a63a5b185167a1764bbb04af35bba9c3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt;</type>
+        <definition>Task&lt; Post &gt; Application.DaoInterfaces.IPostDao.GetByIdAsync</definition>
+        <argsstring>(int id)</argsstring>
+        <name>GetByIdAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.GetByIdAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1aa0e19eb5078b66234bdf51f832906823">GetByIdAsync</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="11" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a63c87dfea4dff8e6eec89e1e7cd40d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task&lt; IEnumerable&lt; <ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref> &gt; &gt;</type>
+        <definition>Task&lt; IEnumerable&lt; Post &gt; &gt; Application.DaoInterfaces.IPostDao.GetAsync</definition>
+        <argsstring>(SearchPostParametersDto searchPostParametersDto)</argsstring>
+        <name>GetAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.GetAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a087864d69c6305f4ad8ab162c0a0c863">GetAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_search_post_parameters_dto" kindref="compound">SearchPostParametersDto</ref></type>
+          <declname>searchPostParametersDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="12" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a81695d232910fc671b51743a14395fc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Task</type>
+        <definition>Task Application.DaoInterfaces.IPostDao.UpdateAsync</definition>
+        <argsstring>(Post post)</argsstring>
+        <name>UpdateAsync</name>
+        <qualifiedname>Application.DaoInterfaces.IPostDao.UpdateAsync</qualifiedname>
+        <reimplementedby refid="class_file_data_1_1_d_a_os_1_1_post_file_dao_1a723cb2c078f1c3107bdd4714008cdbb6">UpdateAsync</reimplementedby>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_post" kindref="compound">Post</ref></type>
+          <declname>post</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/DaoInterfaces/IPostDao.cs" line="14" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.DaoInterfaces.IPostDao</label>
+        <link refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao"/>
+      </node>
+      <node id="2">
+        <label>FileData.DAOs.PostFileDao</label>
+        <link refid="class_file_data_1_1_d_a_os_1_1_post_file_dao"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Application/DaoInterfaces/IPostDao.cs" line="6" column="18" bodyfile="Application/DaoInterfaces/IPostDao.cs" bodystart="7" bodyend="15"/>
+    <listofallmembers>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1af6fcb74404767533d854e2b09f39d832" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>CreateAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a63c87dfea4dff8e6eec89e1e7cd40d7d" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>GetAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a9237ff4d33eb0592ab8af372d0886527" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>GetByBody</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a63a5b185167a1764bbb04af35bba9c3f" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>GetByIdAsync</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1aeca24d27109679d2b6202ee4202a4c5e" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>GetByTitle</name></member>
+      <member refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao_1a81695d232910fc671b51743a14395fc8" prot="public" virt="non-virtual"><scope>Application::DaoInterfaces::IPostDao</scope><name>UpdateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

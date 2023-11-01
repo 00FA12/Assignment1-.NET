@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_application_1_1_logic_1_1_comment_logic" kind="class" language="C#" prot="public">
+    <compoundname>Application::Logic::CommentLogic</compoundname>
+    <basecompoundref refid="interface_application_1_1_logic_interfaces_1_1_i_comment_logic" prot="public" virt="non-virtual">Application.LogicInterfaces.ICommentLogic</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_application_1_1_logic_1_1_comment_logic_1a61bc1b0e928f508a6fce8dfb1afabd0f" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao" kindref="compound">IPostDao</ref></type>
+        <definition>readonly IPostDao Application.Logic.CommentLogic._postDao</definition>
+        <argsstring></argsstring>
+        <name>_postDao</name>
+        <qualifiedname>Application.Logic.CommentLogic._postDao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="10" column="31" bodyfile="Application/Logic/CommentLogic.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_logic_1_1_comment_logic_1a0ba102681b29eeec88918a1aac93d91b" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kindref="compound">IUserDao</ref></type>
+        <definition>readonly IUserDao Application.Logic.CommentLogic._userDao</definition>
+        <argsstring></argsstring>
+        <name>_userDao</name>
+        <qualifiedname>Application.Logic.CommentLogic._userDao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="11" column="31" bodyfile="Application/Logic/CommentLogic.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_application_1_1_logic_1_1_comment_logic_1ae0426a119264c2f1342586c9553192bf" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_application_1_1_dao_interfaces_1_1_i_comment_dao" kindref="compound">ICommentDao</ref></type>
+        <definition>readonly ICommentDao Application.Logic.CommentLogic._commentDao</definition>
+        <argsstring></argsstring>
+        <name>_commentDao</name>
+        <qualifiedname>Application.Logic.CommentLogic._commentDao</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="12" column="34" bodyfile="Application/Logic/CommentLogic.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_comment_logic_1a27878c774cbe2c3029d8e6f1a241ebd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Application.Logic.CommentLogic.CommentLogic</definition>
+        <argsstring>(IPostDao postDao, IUserDao userDao, ICommentDao commentDao)</argsstring>
+        <name>CommentLogic</name>
+        <qualifiedname>Application.Logic.CommentLogic.CommentLogic</qualifiedname>
+        <param>
+          <type><ref refid="interface_application_1_1_dao_interfaces_1_1_i_post_dao" kindref="compound">IPostDao</ref></type>
+          <declname>postDao</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kindref="compound">IUserDao</ref></type>
+          <declname>userDao</declname>
+        </param>
+        <param>
+          <type><ref refid="interface_application_1_1_dao_interfaces_1_1_i_comment_dao" kindref="compound">ICommentDao</ref></type>
+          <declname>commentDao</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="14" column="12" bodyfile="Application/Logic/CommentLogic.cs" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_comment_logic_1a16455b3770e9d178bd8be7b8c1666540" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>async Task&lt; <ref refid="class_domain_1_1_models_1_1_comment" kindref="compound">Comment</ref> &gt;</type>
+        <definition>async Task&lt; Comment &gt; Application.Logic.CommentLogic.CreateAsync</definition>
+        <argsstring>(CommentCreationDto comment)</argsstring>
+        <name>CreateAsync</name>
+        <qualifiedname>Application.Logic.CommentLogic.CreateAsync</qualifiedname>
+        <reimplements refid="interface_application_1_1_logic_interfaces_1_1_i_comment_logic_1a024e3305f843a01c0df595921acf7ec5">CreateAsync</reimplements>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto" kindref="compound">CommentCreationDto</ref></type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="22" column="23" bodyfile="Application/Logic/CommentLogic.cs" bodystart="22" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_application_1_1_logic_1_1_comment_logic_1a9760863ae8161f07a7ecc67af991c3ca" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Application.Logic.CommentLogic.ValidateData</definition>
+        <argsstring>(CommentCreationDto commentCreationDto)</argsstring>
+        <name>ValidateData</name>
+        <qualifiedname>Application.Logic.CommentLogic.ValidateData</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto" kindref="compound">CommentCreationDto</ref></type>
+          <declname>commentCreationDto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Application/Logic/CommentLogic.cs" line="44" column="25" bodyfile="Application/Logic/CommentLogic.cs" bodystart="44" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Application.Logic.CommentLogic</label>
+        <link refid="class_application_1_1_logic_1_1_comment_logic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommentLogic</label>
+        <link refid="interface_application_1_1_logic_interfaces_1_1_i_comment_logic"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Application.Logic.CommentLogic</label>
+        <link refid="class_application_1_1_logic_1_1_comment_logic"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ICommentLogic</label>
+        <link refid="interface_application_1_1_logic_interfaces_1_1_i_comment_logic"/>
+      </node>
+    </collaborationgraph>
+    <location file="Application/Logic/CommentLogic.cs" line="8" column="7" bodyfile="Application/Logic/CommentLogic.cs" bodystart="9" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1ae0426a119264c2f1342586c9553192bf" prot="private" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>_commentDao</name></member>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1a61bc1b0e928f508a6fce8dfb1afabd0f" prot="private" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>_postDao</name></member>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1a0ba102681b29eeec88918a1aac93d91b" prot="private" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>_userDao</name></member>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1a27878c774cbe2c3029d8e6f1a241ebd7" prot="public" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>CommentLogic</name></member>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1a16455b3770e9d178bd8be7b8c1666540" prot="public" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>CreateAsync</name></member>
+      <member refid="class_application_1_1_logic_1_1_comment_logic_1a9760863ae8161f07a7ecc67af991c3ca" prot="private" virt="non-virtual"><scope>Application::Logic::CommentLogic</scope><name>ValidateData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

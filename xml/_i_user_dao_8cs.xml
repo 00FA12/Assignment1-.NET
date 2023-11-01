@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_i_user_dao_8cs" kind="file" language="C#">
+    <compoundname>IUserDao.cs</compoundname>
+    <innerclass refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" prot="public">Application::DaoInterfaces::IUserDao</innerclass>
+    <innernamespace refid="namespace_application">Application</innernamespace>
+    <innernamespace refid="namespace_application_1_1_dao_interfaces">Application::DaoInterfaces</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_d_t_os" kindref="compound">Domain.DTOs</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespace_domain_1_1_models" kindref="compound">Domain.Models</ref>;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_application_1_1_dao_interfaces" kindref="compound">Application.DaoInterfaces</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao" kindref="compound">IUserDao</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a2c3760668124344c6cee00a248f6af4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;User&gt;<sp/><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a2c3760668124344c6cee00a248f6af4b" kindref="member">CreateAsync</ref>(<ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref><sp/>user);</highlight></codeline>
+<codeline lineno="9" refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1ac7f4cf93af9efcb75ade1145e8d8cc7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;User?&gt;<sp/><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1ac7f4cf93af9efcb75ade1145e8d8cc7b" kindref="member">GetByUsernameAsync</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>username);</highlight></codeline>
+<codeline lineno="10" refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a10b63e2599c29c8385b863e5052a1261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;User?&gt;<sp/><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1a10b63e2599c29c8385b863e5052a1261" kindref="member">GetByIdAsync</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="11" refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1acd5697aae8cb67a3d2ea491c735c2be6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Task&lt;IEnumerable&lt;User&gt;&gt;<sp/><ref refid="interface_application_1_1_dao_interfaces_1_1_i_user_dao_1acd5697aae8cb67a3d2ea491c735c2be6" kindref="member">GetAsync</ref>(<ref refid="class_domain_1_1_d_t_os_1_1_search_user_parameters_dto" kindref="compound">SearchUserParametersDto</ref><sp/>searchUserParameters);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Application/DaoInterfaces/IUserDao.cs"/>
+  </compounddef>
+</doxygen>

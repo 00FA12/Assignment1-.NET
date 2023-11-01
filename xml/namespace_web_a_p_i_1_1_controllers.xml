@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_web_a_p_i_1_1_controllers" kind="namespace" language="C#">
+    <compoundname>WebAPI::Controllers</compoundname>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_auth_controller" prot="public">WebAPI::Controllers::AuthController</innerclass>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_comment_controller" prot="public">WebAPI::Controllers::CommentController</innerclass>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_posts_controller" prot="public">WebAPI::Controllers::PostsController</innerclass>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_test_controller" prot="public">WebAPI::Controllers::TestController</innerclass>
+    <innerclass refid="class_web_a_p_i_1_1_controllers_1_1_users_controller" prot="public">WebAPI::Controllers::UsersController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WebAPI/Controllers/AuthController.cs" line="10" column="1"/>
+  </compounddef>
+</doxygen>

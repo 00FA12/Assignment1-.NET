@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_models_1_1_post" kind="class" language="C#" prot="public">
+    <compoundname>Domain::Models::Post</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1acea6a880eee3494ecd5f4ee0d161ee46" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.Models.Post.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <qualifiedname>Domain.Models.Post.title</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="5" column="19" bodyfile="Domain/Models/Post.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1a8979dc8760b482d0ebf54c827321b1d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.Models.Post.body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <qualifiedname>Domain.Models.Post.body</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="6" column="19" bodyfile="Domain/Models/Post.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1a86af36daa4e3047694d262facbfa2db5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+        <definition>User Domain.Models.Post.author</definition>
+        <argsstring></argsstring>
+        <name>author</name>
+        <qualifiedname>Domain.Models.Post.author</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="7" column="17" bodyfile="Domain/Models/Post.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1ac042f7daac2f112c2cff3c2293b5c807" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool Domain.Models.Post.edited</definition>
+        <argsstring></argsstring>
+        <name>edited</name>
+        <qualifiedname>Domain.Models.Post.edited</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="8" column="17" bodyfile="Domain/Models/Post.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1a0975ffcd7f2c6a4585ca70069e39215c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.Models.Post.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Domain.Models.Post.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="9" column="16" bodyfile="Domain/Models/Post.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1ad183eb1b75d4986760913d31453a7004" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.Models.Post.upVote</definition>
+        <argsstring></argsstring>
+        <name>upVote</name>
+        <qualifiedname>Domain.Models.Post.upVote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="11" column="16" bodyfile="Domain/Models/Post.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_models_1_1_post_1a57f0318c446b7f16c82ac5da77d37f45" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.Models.Post.downVote</definition>
+        <argsstring></argsstring>
+        <name>downVote</name>
+        <qualifiedname>Domain.Models.Post.downVote</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="12" column="16" bodyfile="Domain/Models/Post.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_domain_1_1_models_1_1_post_1ac2628e9e4990bc9647e478f5e10e2e02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.Models.Post.Post</definition>
+        <argsstring>(User author, string title, string body)</argsstring>
+        <name>Post</name>
+        <qualifiedname>Domain.Models.Post.Post</qualifiedname>
+        <param>
+          <type><ref refid="class_domain_1_1_models_1_1_user" kindref="compound">User</ref></type>
+          <declname>author</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Models/Post.cs" line="14" column="12" bodyfile="Domain/Models/Post.cs" bodystart="14" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/Models/Post.cs" line="3" column="7" bodyfile="Domain/Models/Post.cs" bodystart="4" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_models_1_1_post_1a86af36daa4e3047694d262facbfa2db5" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>author</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1a8979dc8760b482d0ebf54c827321b1d4" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>body</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1a57f0318c446b7f16c82ac5da77d37f45" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>downVote</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1ac042f7daac2f112c2cff3c2293b5c807" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>edited</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1a0975ffcd7f2c6a4585ca70069e39215c" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>id</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1ac2628e9e4990bc9647e478f5e10e2e02" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>Post</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1acea6a880eee3494ecd5f4ee0d161ee46" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>title</name></member>
+      <member refid="class_domain_1_1_models_1_1_post_1ad183eb1b75d4986760913d31453a7004" prot="public" virt="non-virtual"><scope>Domain::Models::Post</scope><name>upVote</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespace_web_a_p_i_1_1_services" kind="namespace" language="C#">
+    <compoundname>WebAPI::Services</compoundname>
+    <innerclass refid="class_web_a_p_i_1_1_services_1_1_auth_service" prot="public">WebAPI::Services::AuthService</innerclass>
+    <innerclass refid="interface_web_a_p_i_1_1_services_1_1_i_auth_service" prot="public">WebAPI::Services::IAuthService</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WebAPI/Services/AuthService.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

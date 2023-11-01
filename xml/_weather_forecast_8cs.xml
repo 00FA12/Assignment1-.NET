@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_weather_forecast_8cs" kind="file" language="C#">
+    <compoundname>WeatherForecast.cs</compoundname>
+    <innerclass refid="class_blazor_server_1_1_data_1_1_weather_forecast" prot="public">BlazorServer::Data::WeatherForecast</innerclass>
+    <innernamespace refid="namespace_blazor_server">BlazorServer</innernamespace>
+    <innernamespace refid="namespace_blazor_server_1_1_data">BlazorServer::Data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_blazor_server_1_1_data" refkind="compound"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_blazor_server_1_1_data" kindref="compound">BlazorServer.Data</ref>;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_blazor_server_1_1_data_1_1_weather_forecast" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_blazor_server_1_1_data_1_1_weather_forecast" kindref="compound">WeatherForecast</ref></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5" refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a457759933ddba6ee354ef4560e45b590" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>DateOnly<sp/><ref refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a457759933ddba6ee354ef4560e45b590" kindref="member">Date</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a92939c9c2f857a2a6801c9a0253ccee0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a92939c9c2f857a2a6801c9a0253ccee0" kindref="member">TemperatureC</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a5918eb61b30ed54af1501e6d0626b294" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a5918eb61b30ed54af1501e6d0626b294" kindref="member">TemperatureF</ref><sp/>=&gt;<sp/>32<sp/>+<sp/>(int)(<ref refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a92939c9c2f857a2a6801c9a0253ccee0" kindref="member">TemperatureC</ref><sp/>/<sp/>0.5556);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a875c6395e3881d499cccacd00201d2e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">?<sp/><ref refid="class_blazor_server_1_1_data_1_1_weather_forecast_1a875c6395e3881d499cccacd00201d2e5" kindref="member">Summary</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="BlazorServer/Data/WeatherForecast.cs"/>
+  </compounddef>
+</doxygen>

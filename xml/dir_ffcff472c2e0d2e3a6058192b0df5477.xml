@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_ffcff472c2e0d2e3a6058192b0df5477" kind="dir">
+    <compoundname>WebAPI/Services</compoundname>
+    <innerfile refid="_auth_service_8cs">AuthService.cs</innerfile>
+    <innerfile refid="_web_a_p_i_2_services_2_i_auth_service_8cs">IAuthService.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="WebAPI/Services/"/>
+  </compounddef>
+</doxygen>

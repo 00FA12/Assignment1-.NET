@@ -1,0 +1,56 @@
+\doxysection{Users\+Controller.\+cs}
+\hypertarget{_users_controller_8cs_source}{}\label{_users_controller_8cs_source}\index{WebAPI/Controllers/UsersController.cs@{WebAPI/Controllers/UsersController.cs}}
+\mbox{\hyperlink{_users_controller_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_application_1_1_logic_interfaces}{Application.LogicInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_d_t_os}{Domain.DTOs}};}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }Microsoft.AspNetCore.Mvc;}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00006}00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_web_a_p_i_1_1_controllers}{WebAPI.Controllers}};}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00008}00008\ [ApiController]}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00009}00009\ [Route(\textcolor{stringliteral}{"{}[controller]"{}})]}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00010}\mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller}{00010}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller}{UsersController}}\ :\ ControllerBase}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00012}00012\ \ \ \ \ \textcolor{keyword}{private}\ readonly\ \mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_user_logic}{IUserLogic}}\ \_userLogic;}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00014}\mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_a8a103f3d7a5ddfb6bec4db9a6b741860}{00014}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_a8a103f3d7a5ddfb6bec4db9a6b741860}{UsersController}}(\mbox{\hyperlink{interface_application_1_1_logic_interfaces_1_1_i_user_logic}{IUserLogic}}\ userLogic)}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \_userLogic\ =\ userLogic;}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00017}00017\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00020}00020\ \ \ \ \ [HttpPost]}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00021}\mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_a5f452a21272e236382899207d4a7db45}{00021}}\ \ \ \ \ \textcolor{keyword}{public}\ async\ Task<ActionResult<User>>\ \mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_a5f452a21272e236382899207d4a7db45}{CreateAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_user_creation_d_t_o}{UserCreationDTO}}\ dto)}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00024}00024\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}\ user\ =\ await\ \_userLogic.CreateAsync(dto);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Created(\$\textcolor{stringliteral}{"{}/users/\{user.username\}"{}},\ user);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00027}00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ e)}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00029}00029\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00030}00030\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(e);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ StatusCode(500,\ e.Message);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00032}00032\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00035}00035\ \ \ \ \ [HttpGet]}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00036}\mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_ac67ef8325ff544ad978b7f3d745c2b4f}{00036}}\ \ \ \ \ \textcolor{keyword}{public}\ async\ Task<ActionResult<IEnumerable<User>>>\ \mbox{\hyperlink{class_web_a_p_i_1_1_controllers_1_1_users_controller_ac67ef8325ff544ad978b7f3d745c2b4f}{GetAsync}}([FromQuery]\ \textcolor{keywordtype}{string}?\ username)}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00037}00037\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_user_parameters_dto}{SearchUserParametersDto}}\ parameters\ =\ \textcolor{keyword}{new}(username);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00041}00041\ \ \ \ \ \ \ \ \ \ \ \ \ IEnumerable<User>\ users\ =\ await\ \_userLogic.GetAsync(parameters);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Ok(users);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00043}00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (Exception\ e)}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(e);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ StatusCode(500,\ e.Message);}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00049}00049\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_users_controller_8cs_source_l00050}00050\ \}}
+
+\end{DoxyCode}

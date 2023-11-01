@@ -1,0 +1,21 @@
+\doxysection{IAuth\+Service.\+cs}
+\hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source}{}\label{_blazor_server_2_services_2_i_auth_service_8cs_source}\index{BlazorServer/Services/IAuthService.cs@{BlazorServer/Services/IAuthService.cs}}
+\mbox{\hyperlink{_blazor_server_2_services_2_i_auth_service_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System.Security.Claims;}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00004}\mbox{\hyperlink{namespace_blazor_server_1_1_services}{00004}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_blazor_server_1_1_services}{BlazorServer.Services}};}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00006}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service}{IAuthService}}}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00008}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_aefd4499e3328f5932cb7c79145a7b7f2}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ Task\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_aefd4499e3328f5932cb7c79145a7b7f2}{LoginAsync}}(\textcolor{keywordtype}{string}\ username,\ \textcolor{keywordtype}{string}\ password);}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00009}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3a1b7dbc47bb979d0dded7dd5ba6967b}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ Task\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3a1b7dbc47bb979d0dded7dd5ba6967b}{LogoutAsync}}();}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00010}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a16baec5a807d4fb9073efa102ba93dd6}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ Task\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a16baec5a807d4fb9073efa102ba93dd6}{RegisterAsync}}(\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}\ user);}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00011}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a8469fea975b25639b77653f85df1033a}{00011}}\ \ \ \ \ \textcolor{keyword}{public}\ Task<ClaimsPrincipal>\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a8469fea975b25639b77653f85df1033a}{GetAuthAsync}}();}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00013}\mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3530a294579eb47d1006512d6ee5990d}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ Action<ClaimsPrincipal>\ \mbox{\hyperlink{interface_blazor_server_1_1_services_1_1_i_auth_service_a3530a294579eb47d1006512d6ee5990d}{OnAuthStateChanged}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_blazor_server_2_services_2_i_auth_service_8cs_source_l00015}00015\ \}}
+
+\end{DoxyCode}

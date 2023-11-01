@@ -1,0 +1,25 @@
+\doxysection{Weather\+Forecast\+Service.\+cs}
+\hypertarget{_weather_forecast_service_8cs_source}{}\label{_weather_forecast_service_8cs_source}\index{BlazorServer/Data/WeatherForecastService.cs@{BlazorServer/Data/WeatherForecastService.cs}}
+\mbox{\hyperlink{_weather_forecast_service_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00001}00001\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_blazor_server_1_1_data}{BlazorServer.Data}};}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00003}\mbox{\hyperlink{class_blazor_server_1_1_data_1_1_weather_forecast_service}{00003}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_blazor_server_1_1_data_1_1_weather_forecast_service}{WeatherForecastService}}}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00004}00004\ \{}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00005}00005\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ readonly\ \textcolor{keywordtype}{string}[]\ Summaries\ =\ \textcolor{keyword}{new}[]}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00006}00006\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00007}00007\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Freezing"{}},\ \textcolor{stringliteral}{"{}Bracing"{}},\ \textcolor{stringliteral}{"{}Chilly"{}},\ \textcolor{stringliteral}{"{}Cool"{}},\ \textcolor{stringliteral}{"{}Mild"{}},\ \textcolor{stringliteral}{"{}Warm"{}},\ \textcolor{stringliteral}{"{}Balmy"{}},\ \textcolor{stringliteral}{"{}Hot"{}},\ \textcolor{stringliteral}{"{}Sweltering"{}},\ \textcolor{stringliteral}{"{}Scorching"{}}}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00008}00008\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00010}\mbox{\hyperlink{class_blazor_server_1_1_data_1_1_weather_forecast_service_afc42eaa11e938058eb8475353a54b6d3}{00010}}\ \ \ \ \ \textcolor{keyword}{public}\ Task<WeatherForecast[]>\ \mbox{\hyperlink{class_blazor_server_1_1_data_1_1_weather_forecast_service_afc42eaa11e938058eb8475353a54b6d3}{GetForecastAsync}}(DateOnly\ startDate)}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00011}00011\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Task.FromResult(Enumerable.Range(1,\ 5).Select(index\ =>\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_blazor_server_1_1_data_1_1_weather_forecast}{WeatherForecast}}}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \ \ \ \ Date\ =\ startDate.AddDays(index),}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00015}00015\ \ \ \ \ \ \ \ \ \ \ \ \ TemperatureC\ =\ Random.Shared.Next(-\/20,\ 55),}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ Summary\ =\ Summaries[Random.Shared.Next(Summaries.Length)]}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00017}00017\ \ \ \ \ \ \ \ \ \}).ToArray());}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00018}00018\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_weather_forecast_service_8cs_source_l00019}00019\ \}}
+
+\end{DoxyCode}

@@ -23,6 +23,12 @@
       "password": "test3",
       "id": 4,
       "securityLevel": 0
+    },
+    {
+      "username": "testUser",
+      "password": "testUser",
+      "id": 5,
+      "securityLevel": 0
     }
   ],
   "Posts": [
@@ -65,6 +71,20 @@
       },
       "edited": false,
       "id": 3,
+      "upVote": 0,
+      "downVote": 0
+    },
+    {
+      "title": "This is a test post",
+      "body": "I want to update this",
+      "author": {
+        "username": "testUser",
+        "password": "testUser",
+        "id": 5,
+        "securityLevel": 0
+      },
+      "edited": true,
+      "id": 4,
       "upVote": 0,
       "downVote": 0
     }

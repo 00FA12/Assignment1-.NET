@@ -1,0 +1,105 @@
+\doxysection{Http\+Clients.\+Implementations.\+Post\+Http\+Client Class Reference}
+\hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client}{}\label{class_http_clients_1_1_implementations_1_1_post_http_client}\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+Inheritance diagram for Http\+Clients.\+Implementations.\+Post\+Http\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_http_clients_1_1_implementations_1_1_post_http_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_post_http_client_afc219150578fd4d4dd9708f75ff90491}{Post\+Http\+Client}} (Http\+Client \+\_\+client)
+\item 
+async Task \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_post_http_client_a6af1a3aec78dd44eba86927110fdecba}{Create\+Async}} (\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_creation_d_t_o}{Post\+Creation\+DTO}} dto)
+\item 
+async Task$<$ ICollection$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_post}{Post}} $>$ $>$ \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_post_http_client_a96366aeb50eb2f3452166e5308852983}{Get\+Async}} (string? user\+Name, bool? edited\+Status, string? title\+Contains, string? body\+Contains)
+\item 
+async Task$<$ \mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_basic_dto}{Post\+Basic\+Dto}} $>$ \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_post_http_client_aeb8cf5d34e1ef0f54ede52504c2094d0}{Get\+By\+Id\+Async}} (int id)
+\item 
+async Task \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_post_http_client_a771803c64e6563b446be661c2b3d421d}{Update\+Async}} (\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_edit_dto}{Post\+Edit\+Dto}} dto)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00010}{10}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client_afc219150578fd4d4dd9708f75ff90491}\label{class_http_clients_1_1_implementations_1_1_post_http_client_afc219150578fd4d4dd9708f75ff90491} 
+\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}!PostHttpClient@{PostHttpClient}}
+\index{PostHttpClient@{PostHttpClient}!HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+\doxysubsubsection{\texorpdfstring{PostHttpClient()}{PostHttpClient()}}
+{\footnotesize\ttfamily Http\+Clients.\+Implementations.\+Post\+Http\+Client.\+Post\+Http\+Client (\begin{DoxyParamCaption}\item[{Http\+Client}]{\+\_\+client }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00014}{14}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client_a6af1a3aec78dd44eba86927110fdecba}\label{class_http_clients_1_1_implementations_1_1_post_http_client_a6af1a3aec78dd44eba86927110fdecba} 
+\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily async Task Http\+Clients.\+Implementations.\+Post\+Http\+Client.\+Create\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_creation_d_t_o}{Post\+Creation\+DTO}}}]{dto }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_post_service_a91bc1c95d20496a453072ad97325d389}{Http\+Clients.\+Client\+Interfaces.\+IPost\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00020}{20}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+\Hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client_a96366aeb50eb2f3452166e5308852983}\label{class_http_clients_1_1_implementations_1_1_post_http_client_a96366aeb50eb2f3452166e5308852983} 
+\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}!GetAsync@{GetAsync}}
+\index{GetAsync@{GetAsync}!HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+\doxysubsubsection{\texorpdfstring{GetAsync()}{GetAsync()}}
+{\footnotesize\ttfamily async Task$<$ ICollection$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_post}{Post}} $>$ $>$ Http\+Clients.\+Implementations.\+Post\+Http\+Client.\+Get\+Async (\begin{DoxyParamCaption}\item[{string?}]{user\+Name,  }\item[{bool?}]{edited\+Status,  }\item[{string?}]{title\+Contains,  }\item[{string?}]{body\+Contains }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_post_service_a7d2767fb055be6a306a0abb15f5e164c}{Http\+Clients.\+Client\+Interfaces.\+IPost\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00030}{30}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+\Hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client_aeb8cf5d34e1ef0f54ede52504c2094d0}\label{class_http_clients_1_1_implementations_1_1_post_http_client_aeb8cf5d34e1ef0f54ede52504c2094d0} 
+\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}!GetByIdAsync@{GetByIdAsync}}
+\index{GetByIdAsync@{GetByIdAsync}!HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+\doxysubsubsection{\texorpdfstring{GetByIdAsync()}{GetByIdAsync()}}
+{\footnotesize\ttfamily async Task$<$ \mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_basic_dto}{Post\+Basic\+Dto}} $>$ Http\+Clients.\+Implementations.\+Post\+Http\+Client.\+Get\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_post_service_a65b218659ca89b12a1b84e596de2ccb8}{Http\+Clients.\+Client\+Interfaces.\+IPost\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00049}{49}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+\Hypertarget{class_http_clients_1_1_implementations_1_1_post_http_client_a771803c64e6563b446be661c2b3d421d}\label{class_http_clients_1_1_implementations_1_1_post_http_client_a771803c64e6563b446be661c2b3d421d} 
+\index{HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}!UpdateAsync@{UpdateAsync}}
+\index{UpdateAsync@{UpdateAsync}!HttpClients.Implementations.PostHttpClient@{HttpClients.Implementations.PostHttpClient}}
+\doxysubsubsection{\texorpdfstring{UpdateAsync()}{UpdateAsync()}}
+{\footnotesize\ttfamily async Task Http\+Clients.\+Implementations.\+Post\+Http\+Client.\+Update\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_post_edit_dto}{Post\+Edit\+Dto}}}]{dto }\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_post_service_a1fd51ff8488f4db21bb6b445c065ba3b}{Http\+Clients.\+Client\+Interfaces.\+IPost\+Service}}.
+
+
+
+Definition at line \mbox{\hyperlink{_post_http_client_8cs_source_l00067}{67}} of file \mbox{\hyperlink{_post_http_client_8cs_source}{Post\+Http\+Client.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Http\+Clients/\+Implementations/\mbox{\hyperlink{_post_http_client_8cs}{Post\+Http\+Client.\+cs}}\end{DoxyCompactItemize}

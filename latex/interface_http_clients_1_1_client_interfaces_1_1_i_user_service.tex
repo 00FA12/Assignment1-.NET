@@ -1,0 +1,50 @@
+\doxysection{Http\+Clients.\+Client\+Interfaces.\+IUser\+Service Interface Reference}
+\hypertarget{interface_http_clients_1_1_client_interfaces_1_1_i_user_service}{}\label{interface_http_clients_1_1_client_interfaces_1_1_i_user_service}\index{HttpClients.ClientInterfaces.IUserService@{HttpClients.ClientInterfaces.IUserService}}
+Inheritance diagram for Http\+Clients.\+Client\+Interfaces.\+IUser\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_http_clients_1_1_client_interfaces_1_1_i_user_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_ada0dafe68496e730e819eff62330a7b0}{Create\+Async}} (\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_user_creation_d_t_o}{User\+Creation\+DTO}} dto)
+\item 
+Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ $>$ \mbox{\hyperlink{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_a8242ff52f685c9c03523c9c320abaaf2}{Get\+Users\+Async}} (string? username\+Contains=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_i_user_service_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_i_user_service_8cs_source}{IUser\+Service.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_ada0dafe68496e730e819eff62330a7b0}\label{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_ada0dafe68496e730e819eff62330a7b0} 
+\index{HttpClients.ClientInterfaces.IUserService@{HttpClients.ClientInterfaces.IUserService}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!HttpClients.ClientInterfaces.IUserService@{HttpClients.ClientInterfaces.IUserService}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily Task$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ Http\+Clients.\+Client\+Interfaces.\+IUser\+Service.\+Create\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_user_creation_d_t_o}{User\+Creation\+DTO}}}]{dto }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_user_http_client_a36bc41068c3b30fe57fe3c58615e33c0}{Http\+Clients.\+Implementations.\+User\+Http\+Client}}.
+
+\Hypertarget{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_a8242ff52f685c9c03523c9c320abaaf2}\label{interface_http_clients_1_1_client_interfaces_1_1_i_user_service_a8242ff52f685c9c03523c9c320abaaf2} 
+\index{HttpClients.ClientInterfaces.IUserService@{HttpClients.ClientInterfaces.IUserService}!GetUsersAsync@{GetUsersAsync}}
+\index{GetUsersAsync@{GetUsersAsync}!HttpClients.ClientInterfaces.IUserService@{HttpClients.ClientInterfaces.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetUsersAsync()}{GetUsersAsync()}}
+{\footnotesize\ttfamily Task$<$ IEnumerable$<$ \mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}} $>$ $>$ Http\+Clients.\+Client\+Interfaces.\+IUser\+Service.\+Get\+Users\+Async (\begin{DoxyParamCaption}\item[{string?}]{username\+Contains = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_http_clients_1_1_implementations_1_1_user_http_client_a88a00828a6bab76fe85ed44d8391b205}{Http\+Clients.\+Implementations.\+User\+Http\+Client}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Http\+Clients/\+Client\+Interfaces/\mbox{\hyperlink{_i_user_service_8cs}{IUser\+Service.\+cs}}\end{DoxyCompactItemize}

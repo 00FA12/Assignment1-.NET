@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_domain_2_program_8cs" kind="file" language="C#">
+    <compoundname>Program.cs</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_domain_2_program_8cs_1ae2cd1b785a30512f19f410edc9744cc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Console.</type>
+        <definition>Console. WriteLine</definition>
+        <argsstring>(&quot;Hello, World!&quot;)</argsstring>
+        <name>WriteLine</name>
+        <param>
+          <type>&quot;</type>
+          <declname>Hello</declname>
+        </param>
+        <param>
+          <type>World!&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/Program.cs" line="3" column="8" declfile="Domain/Program.cs" declline="3" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>See<sp/>https://aka.ms/new-console-template<sp/>for<sp/>more<sp/>information</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_domain_2_program_8cs_1ae2cd1b785a30512f19f410edc9744cc6" refkind="member"><highlight class="normal">Console.WriteLine(</highlight><highlight class="stringliteral">&quot;Hello,<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+    </programlisting>
+    <location file="Domain/Program.cs"/>
+  </compounddef>
+</doxygen>

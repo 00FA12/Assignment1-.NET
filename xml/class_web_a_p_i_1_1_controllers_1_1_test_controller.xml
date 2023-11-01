@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_web_a_p_i_1_1_controllers_1_1_test_controller" kind="class" language="C#" prot="public">
+    <compoundname>WebAPI::Controllers::TestController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ControllerBase</basecompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a179a0f8f279256ef350ae3d612468ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ActionResult</type>
+        <definition>ActionResult WebAPI.Controllers.TestController.GetAsAuthorized</definition>
+        <argsstring>()</argsstring>
+        <name>GetAsAuthorized</name>
+        <qualifiedname>WebAPI.Controllers.TestController.GetAsAuthorized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/TestController.cs" line="13" column="25" bodyfile="WebAPI/Controllers/TestController.cs" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a645fc2a0471e07ab33391c684a696b44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ActionResult</type>
+        <definition>ActionResult WebAPI.Controllers.TestController.GetAsAnon</definition>
+        <argsstring>()</argsstring>
+        <name>GetAsAnon</name>
+        <qualifiedname>WebAPI.Controllers.TestController.GetAsAnon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WebAPI/Controllers/TestController.cs" line="19" column="25" bodyfile="WebAPI/Controllers/TestController.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.TestController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_test_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>ControllerBase</label>
+      </node>
+      <node id="1">
+        <label>WebAPI.Controllers.TestController</label>
+        <link refid="class_web_a_p_i_1_1_controllers_1_1_test_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="WebAPI/Controllers/TestController.cs" line="10" column="7" bodyfile="WebAPI/Controllers/TestController.cs" bodystart="11" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a645fc2a0471e07ab33391c684a696b44" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::TestController</scope><name>GetAsAnon</name></member>
+      <member refid="class_web_a_p_i_1_1_controllers_1_1_test_controller_1a179a0f8f279256ef350ae3d612468ae5" prot="public" virt="non-virtual"><scope>WebAPI::Controllers::TestController</scope><name>GetAsAuthorized</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

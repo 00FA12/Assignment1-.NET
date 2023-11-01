@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_blazor_server_1_1_auth_1_1_custom_auth_provider" kind="class" language="C#" prot="public">
+    <compoundname>BlazorServer::Auth::CustomAuthProvider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">AuthenticationStateProvider</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a5ddbad2df07772230132ae3b44f1092e" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="interface_blazor_server_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+        <definition>readonly IAuthService BlazorServer.Auth.CustomAuthProvider.authService</definition>
+        <argsstring></argsstring>
+        <name>authService</name>
+        <qualifiedname>BlazorServer.Auth.CustomAuthProvider.authService</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Auth/CustomAuthProvider.cs" line="9" column="35" bodyfile="BlazorServer/Auth/CustomAuthProvider.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a1d517826f3f8e5fbff502fc1b1e48833" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BlazorServer.Auth.CustomAuthProvider.CustomAuthProvider</definition>
+        <argsstring>(IAuthService authService)</argsstring>
+        <name>CustomAuthProvider</name>
+        <qualifiedname>BlazorServer.Auth.CustomAuthProvider.CustomAuthProvider</qualifiedname>
+        <param>
+          <type><ref refid="interface_blazor_server_1_1_services_1_1_i_auth_service" kindref="compound">IAuthService</ref></type>
+          <declname>authService</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Auth/CustomAuthProvider.cs" line="11" column="12" bodyfile="BlazorServer/Auth/CustomAuthProvider.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1afe1e5a46a5c55dea893162f71eb56745" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override async Task&lt; AuthenticationState &gt;</type>
+        <definition>override async Task&lt; AuthenticationState &gt; BlazorServer.Auth.CustomAuthProvider.GetAuthenticationStateAsync</definition>
+        <argsstring>()</argsstring>
+        <name>GetAuthenticationStateAsync</name>
+        <qualifiedname>BlazorServer.Auth.CustomAuthProvider.GetAuthenticationStateAsync</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Auth/CustomAuthProvider.cs" line="17" column="32" bodyfile="BlazorServer/Auth/CustomAuthProvider.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a9ed7f033d75e4b2405b1d5ca95491529" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BlazorServer.Auth.CustomAuthProvider.AuthStateChanged</definition>
+        <argsstring>(ClaimsPrincipal principal)</argsstring>
+        <name>AuthStateChanged</name>
+        <qualifiedname>BlazorServer.Auth.CustomAuthProvider.AuthStateChanged</qualifiedname>
+        <param>
+          <type>ClaimsPrincipal</type>
+          <declname>principal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BlazorServer/Auth/CustomAuthProvider.cs" line="24" column="18" bodyfile="BlazorServer/Auth/CustomAuthProvider.cs" bodystart="24" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>AuthenticationStateProvider</label>
+      </node>
+      <node id="1">
+        <label>BlazorServer.Auth.CustomAuthProvider</label>
+        <link refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AuthenticationStateProvider</label>
+      </node>
+      <node id="1">
+        <label>BlazorServer.Auth.CustomAuthProvider</label>
+        <link refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BlazorServer/Auth/CustomAuthProvider.cs" line="7" column="7" bodyfile="BlazorServer/Auth/CustomAuthProvider.cs" bodystart="8" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a5ddbad2df07772230132ae3b44f1092e" prot="private" virt="non-virtual"><scope>BlazorServer::Auth::CustomAuthProvider</scope><name>authService</name></member>
+      <member refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a9ed7f033d75e4b2405b1d5ca95491529" prot="private" virt="non-virtual"><scope>BlazorServer::Auth::CustomAuthProvider</scope><name>AuthStateChanged</name></member>
+      <member refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1a1d517826f3f8e5fbff502fc1b1e48833" prot="public" virt="non-virtual"><scope>BlazorServer::Auth::CustomAuthProvider</scope><name>CustomAuthProvider</name></member>
+      <member refid="class_blazor_server_1_1_auth_1_1_custom_auth_provider_1afe1e5a46a5c55dea893162f71eb56745" prot="public" virt="non-virtual"><scope>BlazorServer::Auth::CustomAuthProvider</scope><name>GetAuthenticationStateAsync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_domain_1_1_d_t_os_1_1_comment_creation_dto" kind="class" language="C#" prot="public">
+    <compoundname>Domain::DTOs::CommentCreationDto</compoundname>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a608f717630bc8e988c2d4c9bec65e4bd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Domain.DTOs.CommentCreationDto.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>Domain.DTOs.CommentCreationDto.text</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/CommentCreationDto.cs" line="5" column="19" bodyfile="Domain/DTOs/CommentCreationDto.cs" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1acd9a88121039f6d557c3121ce27be0cf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.DTOs.CommentCreationDto.authorId</definition>
+        <argsstring></argsstring>
+        <name>authorId</name>
+        <qualifiedname>Domain.DTOs.CommentCreationDto.authorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/CommentCreationDto.cs" line="6" column="16" bodyfile="Domain/DTOs/CommentCreationDto.cs" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="property" id="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a2d83a8570efc0a45e3a7a9a9c79f4ed2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Domain.DTOs.CommentCreationDto.postId</definition>
+        <argsstring></argsstring>
+        <name>postId</name>
+        <qualifiedname>Domain.DTOs.CommentCreationDto.postId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/CommentCreationDto.cs" line="7" column="16" bodyfile="Domain/DTOs/CommentCreationDto.cs" bodystart="7" bodyend="7"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a3a220f078497792475e2fbc7e050c4d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Domain.DTOs.CommentCreationDto.CommentCreationDto</definition>
+        <argsstring>(string text, int authorId, int postId)</argsstring>
+        <name>CommentCreationDto</name>
+        <qualifiedname>Domain.DTOs.CommentCreationDto.CommentCreationDto</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>authorId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>postId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Domain/DTOs/CommentCreationDto.cs" line="8" column="12" bodyfile="Domain/DTOs/CommentCreationDto.cs" bodystart="8" bodyend="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Domain/DTOs/CommentCreationDto.cs" line="3" column="7" bodyfile="Domain/DTOs/CommentCreationDto.cs" bodystart="4" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1acd9a88121039f6d557c3121ce27be0cf" prot="public" virt="non-virtual"><scope>Domain::DTOs::CommentCreationDto</scope><name>authorId</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a3a220f078497792475e2fbc7e050c4d4" prot="public" virt="non-virtual"><scope>Domain::DTOs::CommentCreationDto</scope><name>CommentCreationDto</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a2d83a8570efc0a45e3a7a9a9c79f4ed2" prot="public" virt="non-virtual"><scope>Domain::DTOs::CommentCreationDto</scope><name>postId</name></member>
+      <member refid="class_domain_1_1_d_t_os_1_1_comment_creation_dto_1a608f717630bc8e988c2d4c9bec65e4bd" prot="public" virt="non-virtual"><scope>Domain::DTOs::CommentCreationDto</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

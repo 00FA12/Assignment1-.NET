@@ -1,0 +1,18 @@
+\doxysection{IUser\+Dao.\+cs}
+\hypertarget{_i_user_dao_8cs_source}{}\label{_i_user_dao_8cs_source}\index{Application/DaoInterfaces/IUserDao.cs@{Application/DaoInterfaces/IUserDao.cs}}
+\mbox{\hyperlink{_i_user_dao_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_d_t_os}{Domain.DTOs}};}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00004}00004\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_application_1_1_dao_interfaces}{Application.DaoInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00006}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao}{IUserDao}}}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00008}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a2c3760668124344c6cee00a248f6af4b}{00008}}\ \ \ \ \ Task<User>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a2c3760668124344c6cee00a248f6af4b}{CreateAsync}}(\mbox{\hyperlink{class_domain_1_1_models_1_1_user}{User}}\ user);}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00009}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_ac7f4cf93af9efcb75ade1145e8d8cc7b}{00009}}\ \ \ \ \ Task<User?>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_ac7f4cf93af9efcb75ade1145e8d8cc7b}{GetByUsernameAsync}}(\textcolor{keywordtype}{string}\ username);}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00010}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a10b63e2599c29c8385b863e5052a1261}{00010}}\ \ \ \ \ Task<User?>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_a10b63e2599c29c8385b863e5052a1261}{GetByIdAsync}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00011}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_acd5697aae8cb67a3d2ea491c735c2be6}{00011}}\ \ \ \ \ Task<IEnumerable<User>>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_user_dao_acd5697aae8cb67a3d2ea491c735c2be6}{GetAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_user_parameters_dto}{SearchUserParametersDto}}\ searchUserParameters);}
+\DoxyCodeLine{\Hypertarget{_i_user_dao_8cs_source_l00012}00012\ \}}
+
+\end{DoxyCode}

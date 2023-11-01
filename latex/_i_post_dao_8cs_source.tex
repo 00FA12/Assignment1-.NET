@@ -1,0 +1,21 @@
+\doxysection{IPost\+Dao.\+cs}
+\hypertarget{_i_post_dao_8cs_source}{}\label{_i_post_dao_8cs_source}\index{Application/DaoInterfaces/IPostDao.cs@{Application/DaoInterfaces/IPostDao.cs}}
+\mbox{\hyperlink{_i_post_dao_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_d_t_os}{Domain.DTOs}};}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }\mbox{\hyperlink{namespace_domain_1_1_models}{Domain.Models}};}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00004}00004\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_application_1_1_dao_interfaces}{Application.DaoInterfaces}};}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00006}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao}{00006}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao}{IPostDao}}}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00008}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_af6fcb74404767533d854e2b09f39d832}{00008}}\ \ \ \ \ Task<Post>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_af6fcb74404767533d854e2b09f39d832}{CreateAsync}}(\mbox{\hyperlink{class_domain_1_1_models_1_1_post}{Post}}\ post);}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00009}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_aeca24d27109679d2b6202ee4202a4c5e}{00009}}\ \ \ \ \ Task<Post?>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_aeca24d27109679d2b6202ee4202a4c5e}{GetByTitle}}(\textcolor{keywordtype}{string}\ title);}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00010}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a9237ff4d33eb0592ab8af372d0886527}{00010}}\ \ \ \ \ Task<Post?>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a9237ff4d33eb0592ab8af372d0886527}{GetByBody}}(\textcolor{keywordtype}{string}\ body);}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00011}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a63a5b185167a1764bbb04af35bba9c3f}{00011}}\ \ \ \ \ Task<Post>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a63a5b185167a1764bbb04af35bba9c3f}{GetByIdAsync}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00012}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a63c87dfea4dff8e6eec89e1e7cd40d7d}{00012}}\ \ \ \ \ Task<IEnumerable<Post>>\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a63c87dfea4dff8e6eec89e1e7cd40d7d}{GetAsync}}(\mbox{\hyperlink{class_domain_1_1_d_t_os_1_1_search_post_parameters_dto}{SearchPostParametersDto}}\ searchPostParametersDto);}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00013}00013\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00014}\mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a81695d232910fc671b51743a14395fc8}{00014}}\ \ \ \ \ Task\ \mbox{\hyperlink{interface_application_1_1_dao_interfaces_1_1_i_post_dao_a81695d232910fc671b51743a14395fc8}{UpdateAsync}}(\mbox{\hyperlink{class_domain_1_1_models_1_1_post}{Post}}\ post);}
+\DoxyCodeLine{\Hypertarget{_i_post_dao_8cs_source_l00015}00015\ \}}
+
+\end{DoxyCode}

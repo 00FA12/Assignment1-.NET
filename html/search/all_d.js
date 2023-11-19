@@ -1,8 +1,0 @@
-var searchData=
-[
-  ['legible_20collection_20of_20223_20icons_20with_20a_20tiny_20footprint_20mdash_20ready_20to_20use_20with_20bootstrap_20and_20foundation_20a_20href_20https_3a_20github_20com_20iconic_20open_20iconic_20view_20the_20collection_20a_0',['Open Iconic is the open source sibling of &lt;a href=&quot;https://github.com/iconic/open-iconic&quot; &gt;Iconic&lt;/a&gt;. It is a hyper-legible collection of 223 icons with a tiny footprint&amp;mdash;ready to use with Bootstrap and Foundation. &lt;a href=&quot;https://github.com/iconic/open-iconic&quot; &gt;View the collection&lt;/a&gt;',['../md__blazor_server_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e.html#autotoc_md0',1,'']]],
-  ['license_1',['License',['../md__blazor_server_2wwwroot_2css_2open-iconic_2_r_e_a_d_m_e.html#autotoc_md11',1,'']]],
-  ['login_2',['Login',['../class_web_a_p_i_1_1_controllers_1_1_auth_controller.html#a74aa20f1bb2b0a8b1f241ddf10dea281',1,'WebAPI::Controllers::AuthController']]],
-  ['loginasync_3',['loginasync',['../class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service.html#a8a4d3112e2e21a3f70dc286f983a51a8',1,'BlazorServer.Services.Http.JwtAuthService.LoginAsync()'],['../interface_blazor_server_1_1_services_1_1_i_auth_service.html#aefd4499e3328f5932cb7c79145a7b7f2',1,'BlazorServer.Services.IAuthService.LoginAsync()']]],
-  ['logoutasync_4',['logoutasync',['../class_blazor_server_1_1_services_1_1_http_1_1_jwt_auth_service.html#af759e6a52be064c225bf61a73a48a252',1,'BlazorServer.Services.Http.JwtAuthService.LogoutAsync()'],['../interface_blazor_server_1_1_services_1_1_i_auth_service.html#a3a1b7dbc47bb979d0dded7dd5ba6967b',1,'BlazorServer.Services.IAuthService.LogoutAsync()']]]
-];

@@ -9,19 +9,19 @@ public class CommentLogic : ICommentLogic
 {
     private readonly IPostDao _postDao;
     private readonly IUserDao _userDao;
-    private readonly ICommentDao _commentDao;
+    //private readonly ICommentDao _commentDao;
 
     public CommentLogic(IPostDao postDao, IUserDao userDao, ICommentDao commentDao)
     {
         _postDao = postDao;
         _userDao = userDao;
-        _commentDao = commentDao;
+        //_commentDao = commentDao;
     }
 
 
     public async Task<Comment> CreateAsync(CommentCreationDto comment)
     {
-        Comment? existing = await _commentDao.GetByContentAsync(comment.text);
+/*        Comment? existing = await //_commentDao.GetByContentAsync(comment.text);
         
         User? existing2 = await _userDao.GetByIdAsync(comment.authorId);
 
@@ -36,7 +36,8 @@ public class CommentLogic : ICommentLogic
         ValidateData(comment);
         Comment toCreate = new Comment(comment.text, existing2, existing3);
         Comment created = await _commentDao.CreateAsync(toCreate);
-        return created;
+        return created;*/
+        return null;
     }
     
     

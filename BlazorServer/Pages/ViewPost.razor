@@ -74,7 +74,7 @@
         {
             users = await userService.GetUsersAsync();
             postData = await postService.GetByIdAsync(Id);
-            User currentlyAssigned = users.First(user => user.username.Equals(postData.author.username));
+            User currentlyAssigned = users.First(user => user.id == postData.authorId);
             username = currentlyAssigned.username;
 
             dto = new PostEditDto(Id, currentlyAssigned.id, postData.title, postData.body);

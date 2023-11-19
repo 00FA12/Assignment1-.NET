@@ -47,7 +47,7 @@ public class PostFileDao : IPostDao
 
     public Task<IEnumerable<Post>> GetAsync(SearchPostParametersDto searchPostParametersDto)
     {
-        IEnumerable < Post > posts = _context.Posts.AsEnumerable();
+        /*IEnumerable < Post > posts = _context.Posts.AsEnumerable();
         if (!string.IsNullOrEmpty(searchPostParametersDto.username))
         {
             posts = _context.Posts.Where(p =>
@@ -77,6 +77,8 @@ public class PostFileDao : IPostDao
         }
 
         return Task.FromResult(posts);
+    */
+        return null;
     }
 
     public Task UpdateAsync(Post post)

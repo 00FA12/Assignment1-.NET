@@ -2,6 +2,7 @@
 @using Domain.Models
 @using HttpClients.ClientInterfaces
 @inject IPostService postService
+@inject IUserService userService
 
 <h3>Posts</h3>
 
@@ -61,7 +62,7 @@ else
         {
             <tr>
                 <td>@item.id</td>
-                <td>@item.author.username</td>
+                <td>@users.FirstOrDefault(u => u.id == item.authorId).username</td>
                 <td><a href="/ViewPost/@item.id">@item.title</a></td>
                 <td>@item.edited</td>
             </tr>
@@ -76,6 +77,7 @@ else
 
 @code {
     private IEnumerable<Post>? posts;
+    private IEnumerable<User>? users;
     private string msg = "";
     
     private string? usernameFilter;
@@ -88,6 +90,7 @@ else
     protected override async Task OnInitializedAsync()
     {
         await LoadPosts();
+        await LoadUsers();
     }
 
     private async Task LoadPosts()
@@ -106,7 +109,20 @@ else
             Console.WriteLine(e);
             msg = e.Message;
         }
-    } 
+    }
+
+    private async Task LoadUsers()
+    {
+        try
+        {
+            users = await userService.GetUsersAsync();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            msg = e.Message;
+        }
+    }
 
 
     private async Task RemovePost(int postId)

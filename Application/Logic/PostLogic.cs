@@ -30,7 +30,7 @@ public class PostLogic : IPostLogic
         
         
         ValidateData(postToCreate);
-        Post toCreate = new Post(user, postToCreate.title, postToCreate.body);
+        Post toCreate = new Post(user.id, postToCreate.title, postToCreate.body);
         Post created = await _postDao.CreateAsync(toCreate);
 
         return created;
@@ -57,7 +57,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"User with id: {post.ownerId} doesn't exist");
         }
 
-        Post edited = new Post(user, post.newTitle, post.newBody)
+        Post edited = new Post(user.id, post.newTitle, post.newBody)
         {
             edited = true,
             id = toEdit.id
@@ -76,7 +76,7 @@ public class PostLogic : IPostLogic
             throw new Exception($"Post with id {id} not found");
         }
 
-        return new PostBasicDto(post.author, post.title, post.body, post.upVote, post.downVote, post.edited);
+        return new PostBasicDto(post.authorId, post.title, post.body, post.upVote, post.downVote, post.edited);
     }
 
     private static void validatePost(Post post)
